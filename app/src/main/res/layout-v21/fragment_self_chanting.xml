@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_match"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+       style="@style/match_match">
+        <com.google.android.material.appbar.AppBarLayout
+           style="@style/match_wrap">
+            <include android:id="@+id/tabs"
+                layout="@layout/tab_laout"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+           style="@style/match_match"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

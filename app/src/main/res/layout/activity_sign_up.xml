@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:id="@+id/mainLL"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/match_match">
+
+        <LinearLayout
+            style="@style/match_match"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                style="@style/match_match"
+                android:background="@drawable/home_bg2"
+                tools:context=".login.SignupActivity">
+
+                <RelativeLayout
+                    android:id="@+id/sign_up_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/register_bg">
+
+                    <com.namakoti.components.CircleImageView
+                        android:id="@+id/imageView_userProfile"
+                        style="@style/wrap_wrap"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_defaultprofile" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/match_match"
+                    android:layout_below="@id/sign_up_background"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/match_wrap"
+                        android:text="@string/username"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <EditText
+                        android:id="@+id/editText_userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@android:color/white"
+                        android:hint="@string/username"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:maxLength="26"
+                        android:inputType="text"
+                        android:padding="@dimen/_2sdp"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        style="@style/match_wrap"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/phone"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <EditText
+                        android:id="@+id/editText_userPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@android:color/white"
+                        android:hint="@string/phone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="@dimen/_2sdp"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/address"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <EditText
+                        android:id="@+id/editText_userAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@android:color/white"
+                        android:hint="@string/address"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_2sdp"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sign_up_background"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/pincode"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/editText_userPincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@android:color/white"
+                        android:hint="@string/pincode"
+                        android:maxLength="6"
+                        android:inputType="number"
+                        android:padding="@dimen/_2sdp"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="visible" />
+
+                    <CheckBox
+                        android:id="@+id/advancedOption"
+                        style="@style/match_wrap"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/advanced_options"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/advancedLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/interested"
+                            android:textColor="@color/text_color_black" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <CheckBox
+                                android:id="@+id/checkbox_selfChanting"
+                                style="@style/wrap_wrap"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_weight="0.8"
+                                android:text="@string/self_chanting"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_chanting_others"
+                                style="@style/wrap_wrap"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_weight="1.2"
+                                android:text="@string/chanting_others"
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:weightSum="2">
+
+                            <CheckBox
+                                android:id="@+id/checkbox_attending_person"
+                                style="@style/wrap_wrap"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.8"
+                                android:text="@string/attending_inperstion"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_social_cause"
+                                style="@style/wrap_wrap"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.2"
+                                android:text="@string/chanting_social_cause"
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button_signUp"
+                        style="@style/primary_button_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="SignUp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

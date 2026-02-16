@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg2"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_startChanting_cc"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/linear_normal_chanting_new"
+            style="@style/match_match"
+            android:background="@drawable/home_bg2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingTop="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="@string/cause"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <Spinner
+                    android:id="@+id/spinnerCause"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/spinner_background"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    style="@style/match_match"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/select_god"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/selecgod_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/gray_button_round"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/textView_godName_cc"
+                        style="@style/wrap_wrap"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/select" />
+
+                    <ImageView
+                        style="@style/wrap_wrap"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_rightarrow_orange" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/language"
+                    android:textColor="@color/text_color_black" />
+
+                <Spinner
+                    android:id="@+id/spinnerLang"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/spinner_background"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/namam"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <Spinner
+                    android:id="@+id/spinnerNamas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/spinner_background"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Exact Cause"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/exact_cause_etv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/gray_button_round"
+                    android:clickable="true"
+                    android:inputType="text"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/no_of_chants"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/editText_noOfChants_cc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/gray_button_round"
+                    android:clickable="true"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/name_of_person"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/editText_personName_cc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/gray_button_round"
+                    android:clickable="true"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_startChanting_cc"
+        style="@style/primary_button_small"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/start_chanting" />
+</RelativeLayout>

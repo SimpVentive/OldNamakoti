@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    style="@style/match_match"
+    android:background="@drawable/chanting_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.23"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/imageRL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="@drawable/chanting_god_bg">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/god_image"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_defaultprofile" />
+
+            <!--<ImageView
+                android:id="@+id/god_image"
+                style="@style/wrap_wrap"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/shiv_god">-->
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="0.6"
+            android:background="@drawable/namam_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="top|right"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/chanting_volume_ic" />
+
+            <TextView
+                android:id="@+id/gods_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:drawableRight="@drawable/aupdown_ic"
+                android:gravity="left|center"
+                android:text="Om"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_12sdp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/countLL"
+        style="@style/wrap_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chanting_circle"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_chanting_target" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:text="@string/total_count"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/total_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@drawable/count_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/chanting_circle"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_chanting_ongoing" />
+
+            <TextView
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:text="@string/ongoing"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/running_count_tv"
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@drawable/count_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/chanting_circle"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_chanting_printed" />
+
+            <TextView
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center_horizontal"
+                android:text="@string/printed_count"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/printed_count_tv"
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@drawable/count_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/gray_button_round"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/drag_and_drop_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Write"
+                android:textColor="@color/chant_gray"
+                android:textSize="@dimen/_11sdp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <RadioButton
+                android:id="@+id/key_touch_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:text="Key Touch"
+                android:textColor="@color/chant_gray"
+                android:textSize="@dimen/_11sdp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <RadioButton
+                android:id="@+id/japa_mala_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+
+                android:text="Japa Mala"
+                android:textColor="@color/chant_gray"
+                android:textSize="@dimen/_11sdp" />
+
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/nama_type_selection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_weight="0.1"
+        android:text="@string/write_nama_description"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/toplinear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/drag_and_drop_layout"
+            layout="@layout/drag_and_drop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/key_touch_layout"
+            layout="@layout/key_touch_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+
+        <include
+            android:id="@+id/japa_mala_layout"
+            layout="@layout/japa_mala_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/button_background"
+            android:text="@string/stop"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/button_print"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:text="@string/print"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

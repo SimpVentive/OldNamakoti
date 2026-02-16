@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chanting.ChantingSelectionActivity">
+    <LinearLayout
+        android:id="@+id/linear_normal_chanting_new"
+        style="@style/match_match"
+        android:background="@drawable/home_bg2"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+        <LinearLayout
+            style="@style/match_wrap"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp">
+
+            <TextView
+                style="@style/match_match"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@string/select_god"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/_10sdp" />
+
+            <RelativeLayout
+                android:id="@+id/selecgod_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/gray_button_round"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp">
+
+                <TextView
+                    style="@style/wrap_wrap"
+                    android:id="@+id/textView_godName_nc"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/select" />
+
+                <ImageView
+                   style="@style/wrap_wrap"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_rightarrow_orange" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/match_wrap"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/language"
+                android:textColor="@color/text_color_black" />
+            <Spinner
+                android:background="@drawable/spinner_background"
+                android:id="@+id/spinnerLang"
+                android:spinnerMode="dropdown"
+                android:layout_width="fill_parent"
+                android:paddingEnd="@dimen/_5sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_height="@dimen/_30sdp" />
+
+            <TextView
+                style="@style/match_wrap"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/namam"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/_10sdp" />
+            <Spinner
+                android:background="@drawable/spinner_background"
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/spinnerNamas"
+                android:layout_width="fill_parent"
+                android:paddingEnd="@dimen/_5sdp"
+                android:layout_height="@dimen/_30sdp" />
+            <!--<TextView
+                style="@style/match_wrap"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/no_of_chants"
+
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/editText_NoOfChants_nc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/gray_button_round"
+                android:clickable="true"
+                android:inputType="number"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:visibility="gone"/>-->
+
+            <TextView
+                style="@style/match_wrap"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/name_of_person"
+
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/_10sdp" />
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/gray_button_round"
+                android:clickable="true"
+                android:inputType="text"
+                android:maxLength="40"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp" />
+
+            <Button
+                android:id="@+id/startChanButton"
+                style="@style/primary_button_small"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingRight="@dimen/_40sdp"
+                android:text="@string/start_chanting" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

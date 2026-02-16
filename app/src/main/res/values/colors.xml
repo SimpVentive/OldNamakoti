@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FB8C00</color>
+    <color name="colorPrimaryDark">#F57F17</color>
+    <color name="colorAccent">#D50300</color>
+    <color name="green">#60CA88</color>
+    <color name="text_color_black">@android:color/black</color>
+    <color name="light_gray">#d3d3d3</color>
+    <color name="edit_hint_text_color">#eeeeee</color>
+    <color name="orange_button_color">#f78b26</color>
+    <color name="chant_gray">#40464D</color>
+    <color name="dialog_gray">#F6F5F4</color>
+    <color name="red_color">#D50300</color>
+    <color name="cancel_text_color">#0E9B88</color>
+    <color name="light_pink">#FFEFE3</color>
+    <color name="light_green">#E7FBEB</color>
+    <color name="light_blue">#F5F5FC</color>
+    <color name="gray_date_bg">#FAF9F8</color>
+    <color name="blue">#8B97DE</color>
+
+</resources>

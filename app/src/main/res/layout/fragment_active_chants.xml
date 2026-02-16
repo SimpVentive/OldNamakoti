@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_match"
+    android:background="@drawable/home_bg2"
+    android:orientation="vertical"
+    tools:context=".chanting.self.SelectGodActivity">
+
+    <RelativeLayout
+        style="@style/match_wrap"
+        android:layout_margin="@dimen/_20sdp">
+
+        <LinearLayout
+            android:id="@+id/selfChanting_details"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/gray_button_round"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/wrap_wrap"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/_15sdp"
+                android:text="@string/self_chanting_ac"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/textView_selfChanting_count"
+                style="@style/wrap_wrap"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_25sdp"
+                android:text="05"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/causeChanting_details"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_toEndOf="@+id/selfChanting_details"
+            android:background="@drawable/gray_button_round"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/_15sdp"
+                android:text="Requests for Cause chanting"
+                android:textAlignment="center"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/textView_requestForCauseChanting_count"
+                style="@style/wrap_wrap"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:text="05"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chantingRequests_details"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@id/selfChanting_details"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/gray_button_round"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/_15sdp"
+                android:text="Chanting requests made"
+                android:textAlignment="center"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/textView_chantingRequest_count"
+                style="@style/wrap_wrap"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:text="41"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@+id/causeChanting_details"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_toEndOf="@+id/chantingRequests_details"
+            android:background="@drawable/gray_button_round"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/_15sdp"
+                android:text="Requests Accepted"
+                android:textAlignment="center"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/textView_requestsAccepted_count"
+                style="@style/wrap_wrap"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:text="40"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recent_activity"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/_10sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/match_match"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"></androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menu_home_ic"
+            android:title="@string/home" />-->
+        <item
+            android:id="@+id/nav_self"
+            android:icon="@drawable/menu_self_ic"
+            android:title="@string/self_chanting" />
+        <item
+            android:id="@+id/nav_karmic"
+            android:icon="@drawable/menu_karmic_ic"
+            android:title="@string/karmic_chanting" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/menu_activechants_ic"
+            android:title="@string/profile" />
+        <!--<item
+            android:id="@+id/nav_print"
+            android:icon="@drawable/menu_print_ic"
+            android:title="@string/print_delivery" />
+        <item
+            android:id="@+id/nav_pay"
+            android:icon="@drawable/menu_pay_ic"
+            android:title="@string/payment" />-->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/menu_logout_ic"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

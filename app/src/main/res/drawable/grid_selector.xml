@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--in drawables folder selected/unselected god image names are wrongly added-->
+    <item android:drawable="@drawable/selectgod_unselected" android:state_pressed="true" />
+    <item android:drawable="@drawable/selectgod_unselected" android:state_selected="true" />
+    <item android:drawable="@drawable/selectgod_unselected" android:state_focused="true" />
+    <item android:drawable="@drawable/selectgod_selected" />
+
+</selector>

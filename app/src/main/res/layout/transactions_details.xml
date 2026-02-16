@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/transactions_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:contentDescription="collapse"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:text="+"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_3sdp"
+            android:text="Transactions"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/transactions_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_4sdp"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.94"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Transaction id"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:id="@+id/transaction_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Transaction id"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Amount"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Transaction id"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Status"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Transaction id"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Reference no"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:id="@+id/reference_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Transaction id"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Type"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Transaction id"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Created Date"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:id="@+id/created_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Transaction id"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Print count"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:id="@+id/no_of_print"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Transaction id"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Temple to deliver"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:id="@+id/temple_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Transaction id"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

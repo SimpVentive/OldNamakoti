@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_8sdp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/participantsTV"
+        style="@style/text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/participants"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textColor="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:id="@+id/participantRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/descriptionTv"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_toLeftOf="@+id/rightArrowIV"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.namakoti.components.CircularNetworkImageView
+                android:id="@+id/person1Iv"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/ic_profile_pic"
+                android:scaleType="fitXY" />
+
+            <com.namakoti.components.CircularNetworkImageView
+                android:id="@+id/person2Iv"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/ic_profile_pic"
+                android:minHeight="@dimen/_38sdp"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <com.namakoti.components.CircularNetworkImageView
+                android:id="@+id/person3Iv"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/ic_profile_pic"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <com.namakoti.components.CircularNetworkImageView
+                android:id="@+id/person4Iv"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/ic_profile_pic"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <com.namakoti.components.CircularNetworkImageView
+                android:id="@+id/person5Iv"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/ic_profile_pic"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/addCountTV"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/chant_gray"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <com.namakoti.components.CircularNetworkImageView
+            android:id="@+id/rightArrowIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@drawable/ic_rightarrow_grey"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:paddingTop="@dimen/_5sdp" />
+    </RelativeLayout>
+
+</LinearLayout>

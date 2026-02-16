@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_bg2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/chantTitleTv"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/draganddrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/leftArrowIv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:src="@drawable/chanting_leftarrow_ic" />
+        <LinearLayout
+            android:id="@+id/toplinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/leftArrowIv"
+            android:layout_toLeftOf="@+id/rightArrowIv"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/drag_and_drop_layout"
+                layout="@layout/drag_and_drop_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/key_touch_layout"
+                layout="@layout/key_touch_layout"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+            <include
+                android:id="@+id/japa_mala_layout"
+                layout="@layout/japa_mala_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rightArrowIv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/chanting_rightarrow_ic"/>
+
+    </RelativeLayout>
+</LinearLayout>

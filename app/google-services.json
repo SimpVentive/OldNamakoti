@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "927494321111",
+    "project_id": "namakoti",
+    "storage_bucket": "namakoti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927494321111:android:f95d6130a7d51ad8661192",
+        "android_client_info": {
+          "package_name": "com.unitol.namakoti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIdvHFH_1XW2YUCcL5N14fv6VgKnM0yyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

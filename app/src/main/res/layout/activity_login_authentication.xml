@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+   android:id="@+id/relative_layout_2"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg2">
+
+   <LinearLayout
+       style="@style/match_match"
+       android:orientation="vertical"
+       android:id="@+id/linear_layout_6"
+       >
+      <LinearLayout
+         style="@style/match_wrap"
+          android:orientation="vertical"
+          android:id="@+id/linear_layout_7"
+          android:background="@drawable/login_bg1"
+          >
+        <ImageView
+            style="@style/wrap_wrap"
+            android:id="@+id/image_header1"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/_30sdp"
+            android:paddingBottom="@dimen/_30sdp"
+            android:src="@drawable/namakoti_horizontal_logo"/>
+      </LinearLayout>
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:id="@+id/linear_layout_8"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_30sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+       >
+        <TextView
+            style="@style/match_wrap"
+            android:id="@+id/text_view_1"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:textColor="@color/text_color_black"
+            android:text="@string/verifymobile"
+            />
+        <LinearLayout
+            style="@style/match_wrap"
+            android:id="@+id/linear_layout_9"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/wrap_wrap"
+                android:id="@+id/text_view_2"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/text_color_black"
+                android:text="@string/otpmessage"
+                />
+            <TextView
+                style="@style/wrap_wrap"
+                android:textSize="@dimen/_10sdp"
+                android:id="@+id/text_view_mobile"
+                android:text=" +91 0000000000"
+                android:textColor="#FF9800"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/match_wrap"
+            android:id="@+id/linear_layout_10"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_6sdp">
+            <TextView
+               style="@style/wrap_wrap"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/text_color_black"
+                android:text="@string/wait"
+                />
+            <TextClock
+                style="@style/wrap_wrap"
+                android:textSize="@dimen/_10sdp"
+                android:id="@+id/text_timer_otp"
+                android:textColor="@color/text_color_black"
+                android:format12Hour="mm:ss"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/match_wrap"
+            android:id="@+id/linear_layout_11"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+            <EditText
+                style="@style/edit_text_style"
+                android:id="@+id/edit_text_1"
+               />
+
+            <EditText
+                style="@style/edit_text_style"
+                android:id="@+id/edit_text_2"
+                />
+
+            <EditText
+                style="@style/edit_text_style"
+                android:id="@+id/edit_text_3"
+               />
+
+            <EditText
+                style="@style/edit_text_style"
+                android:id="@+id/edit_text_4"
+               />>
+
+            <EditText
+                style="@style/edit_text_style"
+                android:id="@+id/edit_text_5"
+               />
+
+            <EditText
+                style="@style/edit_text_style"
+                android:id="@+id/edit_text_6"
+                />
+
+        </LinearLayout>
+
+</LinearLayout>
+   </LinearLayout>
+</RelativeLayout>

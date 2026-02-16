@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/_8sdp"
+    android:background="@drawable/white_rectangle"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/godNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="Teluguuuuuuuuuuu"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_12sdp"
+
+        android:visibility="visible" />
+        <TextView
+            android:id="@+id/printed_count_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Teluguuuuuuuuuuu"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/chant_gray"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Teluguuuuuuuuuuu"
+            android:textColor="@color/chant_gray"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="visible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="right|center_vertical"
+        android:layout_weight="0.3">
+        <Button
+            style="@style/primary_button_small"
+            android:id="@+id/button_reprint"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="@string/reprint"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

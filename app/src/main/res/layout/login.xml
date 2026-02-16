@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_1"
+    style="@style/wrap_wrap"
+    android:gravity="center"
+    android:background="@drawable/login_bg2">
+
+    <LinearLayout
+        style="@style/match_match"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout_1">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_2"
+            style="@style/match_wrap"
+            android:background="@drawable/login_bg1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_header1"
+                style="@style/wrap_wrap"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_30sdp"
+                android:src="@drawable/namakoti_horizontal_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_3"
+            style="@style/match_wrap"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_30sdp"
+            android:paddingRight="@dimen/_30sdp">
+
+            <TextView
+                android:id="@+id/text_view_1"
+                style="@style/match_wrap"
+                android:paddingTop="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/text_color_black"
+                android:text="@string/enter_mobile_number" />
+
+            <EditText
+                android:id="@+id/edit_text_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center"
+                android:inputType="text"
+                android:textSize="@dimen/_12sdp"
+                android:maxLength="10"
+                android:textColorHint="@color/edit_hint_text_color"
+                android:hint="@string/et_hint"/>
+
+            <Button
+                android:id="@+id/button_continue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/button_text_continue"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+            <ImageView
+                android:id="@+id/login_or"
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:src="@drawable/ic_login_or" />
+
+            <TextView
+                android:id="@+id/text_view_2"
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:text="@string/login_with"
+                android:textColor="@color/text_color_black"/>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_4"
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/facebookImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_fb" />
+
+                <ImageView
+                    android:id="@+id/twitterImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_twitter" />
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_layout_5"
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/wrap_wrap"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="@string/dont_have_account"
+                    android:textColor="@color/text_color_black"/>
+
+                <TextView
+                    android:id="@+id/signupButton"
+                    style="@style/wrap_wrap"
+                    android:text="@string/sign_up"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

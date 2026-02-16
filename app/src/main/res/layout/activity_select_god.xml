@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg2">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/continue_button"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/home_bg2"
+        android:gravity="center"
+        android:numColumns="auto_fit" />
+
+    <Button
+        android:id="@+id/continue_button"
+        style="@style/primary_button_small"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:text="@string/button_text_continue" />
+
+</RelativeLayout>
+

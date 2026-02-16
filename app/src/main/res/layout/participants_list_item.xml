@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/match_wrap"
+        android:layout_below="@+id/descriptionTv"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:id="@+id/rowRL">
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/personIV"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_profile_pic"
+            android:scaleType="fitXY"
+            android:layout_marginRight="@dimen/_10sdp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/arrowIV"
+            android:layout_toRightOf="@+id/personIV"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:weightSum="1">
+        <TextView
+            android:id="@+id/participantNameTV"
+            style="@style/text_style"
+            android:layout_toLeftOf="@+id/attendingTV"
+            android:layout_toRightOf="@+id/personIV"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="@string/participants"
+            
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:textColor="@color/chant_gray" />
+        <TextView
+            android:id="@+id/attendingTV"
+            style="@style/text_style"
+            android:layout_toLeftOf="@+id/arrowIV"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:text="@string/attending"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:gravity="right|center"
+            android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/arrowIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rightarrow_grey"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_2sdp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

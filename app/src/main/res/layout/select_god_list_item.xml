@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wrap_wrap">
+
+    <RelativeLayout
+        android:id="@+id/imageRL"
+        style="@style/wrap_wrap"
+        android:background="@drawable/selectgod_selected">
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/grid_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_defaultprofile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="6dip" />
+
+        <!--<ImageView
+            android:id="@+id/grid_image"
+            style="@style/wrap_wrap"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/lord_shiva_small">-->
+
+        <TextView
+            android:id="@+id/grid_text"
+            style="@style/wrap_wrap"
+            android:layout_below="@+id/grid_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="Lord Shiva" />
+
+    </RelativeLayout>
+
+</LinearLayout>

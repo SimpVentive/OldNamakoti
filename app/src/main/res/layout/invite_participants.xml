@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_bg2">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:id="@+id/new_normal_chanting_sv"
+        style="@style/match_match"
+        android:layout_above="@+id/button_request"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+            <RadioGroup
+                android:id="@+id/contactsSelectionRg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/contactsRb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/all_contacts"
+                    android:background="@android:color/white"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_rightarrow_grey"
+                    android:textColor="@color/chant_gray"
+                    android:textSize="@dimen/_12sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:background="@android:color/white">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_no_people"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/chant_gray"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_35sdp"/>
+                    <TextView
+                        android:id="@+id/totalPeopleTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_34sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/gray_button_round"
+                        android:clickable="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:gravity="center|left"
+                        android:textSize="@dimen/_14sdp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/you_requested_text"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/chant_gray"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_35sdp"/>
+                    <TextView
+                        android:id="@+id/youRequestedTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_34sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/gray_button_round"
+                        android:clickable="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:gravity="center|left"
+                        android:textSize="@dimen/_14sdp"/>
+
+                </LinearLayout>
+
+
+                <RadioButton
+                    android:id="@+id/inviteFrndsRb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/invite_friends_text"
+                    android:background="@android:color/white"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_rightarrow_grey"
+                    android:textColor="@color/chant_gray"
+                    android:textSize="@dimen/_12sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:background="@android:color/white">
+
+                <LinearLayout
+                    android:id="@+id/parentEmailLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <include layout="@layout/add_email_layout"
+                        android:id="@+id/includeEmailLL"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/message_for_text"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/chant_gray"
+                android:layout_marginTop="@dimen/_10sdp"/>
+            <EditText
+                android:id="@+id/messageEtv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/gray_button_rectangle"
+                android:clickable="true"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:maxLines="2"
+                android:overScrollMode="always"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:scrollHorizontally="false"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/chant_gray"
+                android:layout_marginTop="@dimen/_10sdp"/>
+            <EditText
+                android:id="@+id/descriptionEtv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/gray_button_rectangle"
+                android:clickable="true"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:maxLines="2"
+                android:overScrollMode="always"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:scrollHorizontally="false"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/do_you_want_pooja_text"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/chant_gray"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <RadioGroup
+                android:id="@+id/yesOrNoRg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/yesRb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@android:string/yes"
+                    android:textColor="@color/chant_gray"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RadioButton
+                    android:id="@+id/noRb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@android:string/no"
+                    android:textColor="@color/chant_gray"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        style="@style/primary_button_small"
+        android:id="@+id/button_request"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:text="@string/request_for_chant"/>
+</RelativeLayout>

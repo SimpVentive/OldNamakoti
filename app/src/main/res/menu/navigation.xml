@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/selfChanting"
+        android:icon="@drawable/ic_home_self"
+        android:title="@string/self_chanting" />
+
+    <item
+        android:id="@+id/karmic_chanting"
+        android:icon="@drawable/ic_home_karmic"
+        android:title="@string/karmic_chanting" />
+
+    <item
+        android:id="@+id/active_chants"
+        android:icon="@drawable/ic_home_active"
+        android:title="@string/active_chants" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_home_settings"
+        android:title="@string/settings"/>
+
+</menu>
