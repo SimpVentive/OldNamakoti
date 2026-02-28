@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/view_widths"
+    android:layout_marginRight="@dimen/view_widths"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_of_spinner_in_profile"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:text="Upgrade"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_for_setnama"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_of_spinner_in_profile" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:weightSum="1.0" >
+
+        <RadioButton
+            android:id="@+id/upgrade"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_of_spinner_in_profile"
+            android:checked="true"
+            android:text="Upgrade"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_4_radio_enternama" />
+
+        <View
+            android:id="@+id/view_below_to_upgrade"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_of_view_in_profile" />
+
+        <RadioButton
+            android:id="@+id/upgrade_and_print"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_of_spinner_in_profile"
+            android:checked="true"
+            android:text="Upgrade and print"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_4_radio_enternama" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_of_view_in_profile" />
+
+        <RadioButton
+            android:id="@+id/upgrade_and_chanting"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_of_spinner_in_profile"
+            android:text="Upgrade and Continue Chanting"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_4_radio_enternama" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_of_spinner_in_profile"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_of_views_save_nama"
+        android:layout_marginTop="@dimen/margin_of_views_save_nama"
+        android:background="@drawable/rounded_corners_4_main"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/pay_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_4_enternama"
+            android:background="@drawable/selector_4_buttons"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_right_left_of_pay"
+            android:paddingRight="@dimen/padding_right_left_of_pay"
+            android:text="@string/ok"
+            android:textColor="@drawable/common_txt_selector"
+            android:textSize="@dimen/textSize_for_setnama" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_of_spinner_in_profile" />
+
+</LinearLayout>

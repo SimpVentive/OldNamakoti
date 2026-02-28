@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:weightSum="1.0">
+
+    <include layout="@layout/main_phone_4_tabs" />
+
+    <!-- <ImageView
+        android:id="@+id/indicator_volley"
+        android:layout_width="@dimen/indicator_bg_params"
+        android:layout_height="@dimen/indicator_bg_params"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/empty_description"
+        android:gravity="center"
+        android:src="@drawable/indicator"
+        android:visibility="invisible" >
+    </ImageView> -->
+
+</RelativeLayout>

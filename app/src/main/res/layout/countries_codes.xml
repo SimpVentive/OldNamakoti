@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.1"
+        layout="@layout/country_hdr_phone" />
+    <!--
+         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/bar"
+        android:gravity="center"
+        android:text="@string/please_select_ur_country"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_profile" />
+    -->
+
+    <ListView
+        android:id="@+id/listview_countries"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:fastScrollEnabled="true" >
+    </ListView>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.1" >
+    </LinearLayout>
+    -->
+
+</LinearLayout>

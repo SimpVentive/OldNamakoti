@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="empty_description"></string>
+    <string name="wifi_text">Please Enable Network.</string>
+    <string name="ok">OK</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    
+
+</resources>

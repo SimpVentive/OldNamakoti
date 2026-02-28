@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/gods_img_size_selectnama"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/imageslayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.75"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:src="@drawable/goddessdurga_savenama" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:src="@drawable/lordganesh_savenama" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:src="@drawable/lordhanuman_savenama" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.01" />
+
+    <LinearLayout
+        android:id="@+id/buttonslayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.23"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.31"
+            android:background="@drawable/rounded_corners_4_main"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/durag_devi_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_4_main"
+                android:background="@drawable/selector_4_unselect_buttons"
+                android:enabled="false"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_leftright_selnama"
+                android:paddingRight="@dimen/padding_leftright_selnama"
+                android:text="Durga mata"
+                android:textColor="@color/white_unselected"
+                android:textSize="@dimen/textSize_4_createnama" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.035" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.31"
+            android:background="@drawable/rounded_corners_4_main"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ganesh_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_4_main"
+                android:background="@drawable/selector_4_unselect_buttons"
+                android:enabled="false"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_leftright_selnama"
+                android:paddingRight="@dimen/padding_leftright_selnama"
+                android:text="Vinayaka"
+                android:textColor="@color/white_unselected"
+                android:textSize="@dimen/textSize_4_createnama" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.035" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.31"
+            android:background="@drawable/rounded_corners_4_main"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hanuman_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_4_main"
+                android:background="@drawable/selector_4_unselect_buttons"
+                android:enabled="false"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_leftright_selnama"
+                android:paddingRight="@dimen/padding_leftright_selnama"
+                android:text="Hanuman"
+                android:textColor="@color/white_unselected"
+                android:textSize="@dimen/textSize_4_createnama" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

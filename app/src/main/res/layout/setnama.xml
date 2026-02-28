@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_left_right_enter_nama_main"
+    android:layout_marginRight="@dimen/margin_left_right_enter_nama_main"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_weight="0.06"
+        android:text="@string/select_god_for_chant"
+        android:textColor="@color/profile_new_color_text"
+        android:textSize="@dimen/textSize_for_et_enternama" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.02" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/continue_button"
+            android:gravity="center"
+            android:numColumns="auto_fit" />
+
+        <Button
+            android:id="@+id/continue_button"
+            style="@style/primary_button_small"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="@string/button_text_continue" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/chant_setiings_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+        android:id="@+id/chant_setiings_help_expand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:contentDescription="collapse"
+            android:gravity="center"
+            android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
+            android:text="+"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
+            android:text="@string/chant_setiings_help"
+            android:textColor="@color/orange" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chant_setiings_help_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
+            android:textColor="@color/orange" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.94"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/click_on_help"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_for_et_enternama" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+                android:paddingRight="@dimen/padding_left_right_of_view_profile" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:text="•"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_for_et_enternama" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:text="@string/chant_1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_for_et_enternama" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:text="•"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_for_et_enternama" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:text="@string/chant_2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_for_et_enternama" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:text="•"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_for_et_enternama" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:text="@string/chant_3"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_for_et_enternama" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:text="•"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_for_et_enternama" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:text="@string/chant_4"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_for_et_enternama" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

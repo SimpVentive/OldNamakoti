@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_of_save_nama"
+    android:weightSum="1" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+        android:paddingRight="@dimen/padding_left_right_of_view_profile"
+        android:text="@string/select_language_text"
+        android:textColor="@color/profile_new_color_text" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.77"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+                android:paddingRight="@dimen/padding_left_right_of_view_profile"
+                android:text="@string/selected_god"
+                android:textColor="@color/profile_new_color_text" />
+
+            <TextView
+                android:id="@+id/namam_textview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+                android:paddingRight="@dimen/padding_left_right_of_view_profile" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/god_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.06"
+        android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+        android:paddingRight="@dimen/padding_left_right_of_view_profile"
+        android:text="@string/language"
+        android:textColor="@color/profile_new_color_text"
+        android:textSize="@dimen/textSize_for_setnama" />
+
+    <Spinner
+        android:id="@+id/language_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:background="@drawable/select_img"
+        android:text="@string/selectlanguage"
+        android:textColor="#000000"
+        android:textSize="@dimen/textSize_for_setnama_et" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+        android:paddingRight="@dimen/padding_left_right_of_view_profile"
+        android:text="@string/namam"
+        android:textColor="@color/profile_new_color_text"
+        android:textSize="@dimen/textSize_for_setnama" />
+
+    <Spinner
+        android:id="@+id/namam_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:background="@drawable/select_img"
+        android:text="@string/selectnamam"
+        android:textColor="#000000"
+        android:textSize="@dimen/textSize_for_setnama_et" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+        android:paddingRight="@dimen/padding_left_right_of_view_profile"
+        android:text="@string/nameoftheperson"
+        android:textColor="@color/profile_new_color_text" />
+
+    <EditText
+        android:id="@+id/preson_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.076"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="@string/nameoftheperson"
+        android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+        android:paddingRight="@dimen/padding_left_right_of_view_profile" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+        android:paddingRight="@dimen/padding_left_right_of_view_profile"
+        android:text="@string/note"
+        android:textColor="@color/profile_new_color_text"
+        android:textStyle="italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.16" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+            android:paddingRight="@dimen/padding_left_right_of_view_profile" >
+
+            <TextView
+                android:id="@+id/beyond_ten_thousand"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/beyond_ten_thousand" />
+
+            <TextView
+                android:id="@+id/extra_charges"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/beyond_ten_thousand" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.01" />
+
+    <LinearLayout
+        android:id="@+id/keylayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.09"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:id="@+id/save_imageview_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:background="@drawable/rounded_corners_4_main"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/save_setnama_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_for_setnama"
+                android:background="@drawable/selector_4_buttons"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_for_setnama" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+</LinearLayout>

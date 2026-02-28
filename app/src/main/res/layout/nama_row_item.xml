@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="1.0">
+
+    <View
+        android:id="@+id/dummy"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_weight="0.02" />
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dip"
+        android:layout_marginTop="@dimen/margin_top_bottem_spinners_in_adapter"
+        android:layout_marginBottom="@dimen/margin_top_bottem_spinners_in_adapter"
+        android:layout_weight="0.7"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Teluguuuuuuuuuuu"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/textSize_for_et_enternama"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</LinearLayout>

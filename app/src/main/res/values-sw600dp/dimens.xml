@@ -1,0 +1,141 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+
+    -->
+    <dimen name="tab_padding_size">5dp</dimen>
+    <dimen name="margin_top_of_login">10dp</dimen>
+    <dimen name="margin_of_icons">2dp</dimen>
+    <dimen name="view_widths">100dp</dimen>
+    <dimen name="japamala_width_enternama">370dp</dimen>
+    <dimen name="height_of_view_in_profile">26dp</dimen>
+    <dimen name="height_of_cropper_image">280dp</dimen>
+
+    <!-- Register Activity -->
+
+    <dimen name="textsize_4_registering">20dp</dimen>
+    <dimen name="textsize_4_register_header">20dp</dimen>
+    <dimen name="margin_4_register_header_left">14dp</dimen>
+    <dimen name="margin_4_register_header_right">20dp</dimen>
+    <dimen name="margin_for_register">6dp</dimen>
+    <dimen name="padding_for_register">18dp</dimen>
+    <dimen name="marginTop_for_register">8dp</dimen>
+    
+     <!-- Main -->
+    
+    <dimen name="margin_4_main">4dp</dimen>
+	<dimen name="textSize_4_main">25dp</dimen>
+
+    <!-- Sign In -->
+
+    <dimen name="textSize_for_sing_in">28dp</dimen>
+    <dimen name="margin_leftright_signin">220dp</dimen>
+    <dimen name="marginTop_signin">6dp</dimen>
+    <dimen name="margin_4_signin">4dp</dimen>
+
+    <!-- View Profile -->
+    <dimen name="paddingleft_profile_left">15dp</dimen>
+    <dimen name="paddingleft_profile_right">20dp</dimen>
+    <dimen name="paddingtop_profile">8dp</dimen>
+    <dimen name="textsize_profile">25dp</dimen>
+    <dimen name="textsize_profile_et">14dp</dimen>
+    <dimen name="profile_line">14dp</dimen>
+    <dimen name="margin_4_profile">4dp</dimen>
+    
+    <dimen name="height_4_edit_profile">50dp</dimen>
+    <dimen name="height_4_edit_profile_address">60dp</dimen>
+	<dimen name="height_4_edit_profile_date">40dp</dimen>
+	
+      <!--Upgrade  -->
+    <dimen name="margin_4_upgrade">4dp</dimen>
+    <dimen name="textSize_4_upgrade">20dp</dimen>
+    
+    <!-- Payment Delivery -->
+    <dimen name="textsize_for_payment_delivery">24dp</dimen>
+    <dimen name="textsize_for_payment_delivery_god">16dp</dimen>
+
+    <!-- settings -->
+    <dimen name="padding_left_settings">27dp</dimen>
+    <dimen name="textsize_for_settings">22sp</dimen>
+    <dimen name="margin_for_settings">3dp</dimen>
+    <dimen name="padding_for_settings">12dp</dimen>
+
+    <!-- Set Nama -->
+    <dimen name="textSize_for_setnama">23dp</dimen>
+    <dimen name="margin_for_setnama">3dp</dimen>
+    <dimen name="textSize_for_setnama_et">16dp</dimen>
+
+    <!-- Enter Nama -->
+    <dimen name="textSize_for_et_enternama">24sp</dimen>
+    <dimen name="textSize_for_et_enternama_ls">18dp</dimen>
+    <dimen name="textSize_for_et_ongoing_enternama">20sp</dimen>
+    <dimen name="paddingLeft_for_enternama">20dp</dimen>
+    <dimen name="textSize_4_enternama">28sp</dimen>
+    <dimen name="textSize_4_radio_enternama">18dp</dimen>
+    <dimen name="margin_4_enternama">3dp</dimen>
+    <dimen name="marginTop_Bottom_for_enternama">25dp</dimen>
+    <dimen name="marginleft_right_hand_enternama">50dp</dimen>
+    <dimen name="hand_image_height_width_enternama">100dp</dimen>
+    
+     <!-- Sign Up -->
+
+    <dimen name="margin_leftright_signup">200dp</dimen>
+    <dimen name="textSize_for_sing_up">28dp</dimen>
+    <dimen name="textSize_isd_sing_up">20dp</dimen>
+    <dimen name="margin_4_signup">4dp</dimen>
+    
+    
+    <!--Select Nama  -->
+    <dimen name="textSize_4_selectnama">28dp</dimen>
+    <dimen name="textSize_4_createnama">25sp</dimen>
+    <dimen name="gods_img_size_selectnama">240dp</dimen>
+    <dimen name="padding_4_selectnama">3dp</dimen>
+    
+
+    
+    <!-- Change Password  -->
+    
+    
+    <dimen name="margin_leftright_change_pwd">200dp</dimen>
+    <dimen name="textSize_for_change_pwd">20dp</dimen>
+    <dimen name="margin_4_change_pwd">4dp</dimen>
+    <dimen name="margin_top_bottem_4_back_btn">18dp</dimen>
+    <dimen name="margin_right_left_4_back_btn">8dp</dimen>
+    
+    
+    <!--Release Nama  -->
+    
+    <dimen name="textSize_for_release_nama">20dp</dimen>
+    <dimen name="textSize_for_et_releasenama">18dp</dimen>
+    <dimen name="height_of_hand_written_image">95dp</dimen>
+    
+    <!-- Extras -->
+    <dimen name="margin_top_bottem_spinners_in_adapter">13dp</dimen>
+    <dimen name="margin_top_bottem_of_browse">12dp</dimen>
+    <dimen name="padding_right_left_of_introduction">16dp</dimen>
+    <dimen name="margin_top_of_light">15dp</dimen>
+
+    <dimen name="padding_of_view_profile">14dp</dimen>
+    <dimen name="padding_of_save_nama">30dp</dimen>
+    <dimen name="padding_left_right_of_view_profile">16dp</dimen>
+    <dimen name="padding_top_bottem_of_view_profile">5dp</dimen>
+    <dimen name="height_of_spinner_in_profile">70dp</dimen>
+    <dimen name="height_of_spinner_in_profile_ls">60dp</dimen>
+    <dimen name="margin_of_views_save_nama">8dp</dimen>
+    <dimen name="height_of_save_nama_god">120dp</dimen>
+    <dimen name="margin_left_right_enter_nama_main">15dp</dimen>
+    <dimen name="margin_left_right_enter_nama_main_ls">10dp</dimen>
+    <dimen name="height_of_status_layout">135dp</dimen>
+    <dimen name="padding_right_left_of_pay">26dp</dimen>
+    
+    <dimen name="text_size_4_introduction">30dp</dimen>
+    <dimen name="text_size_4_introduction_hdr">34dp</dimen>
+    <dimen name="margin_bottem_introduction">18dp</dimen>
+    <dimen name="width_of_line_view_introduction">264dp</dimen>
+    <dimen name="spinner_text_size_for_adapter">20dp</dimen>
+    <dimen name="text_size_of_start_nama">26dp</dimen>
+    <dimen name="margin_top_bottem_spinners_in_adapter_2">12dp</dimen>
+    <dimen name="width_height_of_help_question">20dp</dimen>
+</resources>

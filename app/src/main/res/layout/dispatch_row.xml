@@ -9,8 +9,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.06"
         android:gravity="center_vertical"
-        android:padding="@dimen/_4sdp"
-        android:textColor="@color/colorPrimary" />
+        android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
+        android:textColor="@color/orange" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -31,9 +31,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center_vertical"
+                android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
                 android:text="Date"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/text_color_black" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/date_dp_id"
@@ -41,9 +41,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center_vertical"
+                android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
                 android:text="date dp_id"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/text_color_black" />
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <LinearLayout
@@ -58,9 +58,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center_vertical"
+                android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
                 android:text="Time"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/text_color_black" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/time_dp"
@@ -68,9 +68,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center_vertical"
+                android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
                 android:text="Transaction id"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/text_color_black" />
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <LinearLayout
@@ -85,9 +85,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center_vertical"
+                android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
                 android:text="Status"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/text_color_black" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/status_dp"
@@ -95,9 +95,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center_vertical"
+                android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
                 android:text="Transaction id"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/text_color_black" />
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <LinearLayout
@@ -112,9 +112,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center_vertical"
+                android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
                 android:text="Source"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/text_color_black" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/source_dp"
@@ -122,9 +122,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center_vertical"
+                android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
                 android:text="Transaction id"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/text_color_black" />
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <LinearLayout
@@ -139,9 +139,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center_vertical"
+                android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
                 android:text="Tracking No"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/text_color_black" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/tracking_no"
@@ -149,9 +149,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center_vertical"
+                android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
                 android:text="Transaction id"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/text_color_black" />
+                android:textColor="@color/black" />
         </LinearLayout>
     </LinearLayout>
 

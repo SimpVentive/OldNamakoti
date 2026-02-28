@@ -1,21 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#FB8C00</color>
-    <color name="colorPrimaryDark">#F57F17</color>
-    <color name="colorAccent">#D50300</color>
-    <color name="green">#60CA88</color>
-    <color name="text_color_black">@android:color/black</color>
-    <color name="light_gray">#d3d3d3</color>
-    <color name="edit_hint_text_color">#eeeeee</color>
-    <color name="orange_button_color">#f78b26</color>
-    <color name="chant_gray">#40464D</color>
-    <color name="dialog_gray">#F6F5F4</color>
-    <color name="red_color">#D50300</color>
-    <color name="cancel_text_color">#0E9B88</color>
-    <color name="light_pink">#FFEFE3</color>
-    <color name="light_green">#E7FBEB</color>
-    <color name="light_blue">#F5F5FC</color>
-    <color name="gray_date_bg">#FAF9F8</color>
-    <color name="blue">#8B97DE</color>
+<!--
+		Copyright (C) 2010 Regis Montoya (aka r3gis - www.r3gis.fr)
+		Copyright (C) 2007-2008 Esmertec AG.
+	 	Copyright (C) 2007-2008 The Android Open Source Project
+	
+		This file is part of CSipSimple. CSipSimple is free software: you can
+		redistribute it and/or modify it under the terms of the GNU General
+		Public License as published by the Free Software Foundation, either
+		version 3 of the License, or (at your option) any later version.
 
+		CSipSimple is distributed in the hope that it will be useful, but
+		WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+		General Public License for more details. You should have received a
+		copy of the GNU General Public License along with CSipSimple. If not,
+		see <http://www.gnu.org/licenses/>.
+-->
+<!-- Parts of this file are extract from the android project distributed under Apache license relicensed in GPLv3 -->
+<resources>
+
+    <color name="app_color">#f06d0d</color>
+    <color name="app_color_transparant">#50f06d0d</color>
+    <color name="unselect_setnama_color">#50f06d0d</color>
+    
+    <color name="dim_grey">#383c45</color>
+    <color name="light_yellow">#ffde00</color>
+    <color name="yellow_movie">#e5b024</color>
+    <color name="blueshade">#85cfef</color>
+    <color name="account_inactive">#FF646464</color>
+    <color name="account_unregistered">#FFFFC200</color>
+    <color name="account_valid">#FF84E300</color>
+    <color name="account_error">#FFFF0F00</color>
+
+    <!-- the background color used for unread conversation -->
+    <color name="unread_bgcolor">#ffffffff</color>
+    <color name="read_bgcolor">#ffeeeeee</color>
+
+    <drawable name="light_blue_background">#ffecfbff</drawable>
+
+    <!-- toggle buttons -->
+    <color name="tg_top_normal">#c9cccf</color>
+    <color name="tg_bottom_normal">#a9adb4</color>
+    <color name="tg_top_on">#4f8df1</color>
+    <color name="tg_bottom_on">#175cce</color>
+
+    <!-- Color of image view placeholder. -->
+    <color name="image_placeholder">#DDDDDD</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="blue_sky">#A0C8FF</color>
+    <color name="vert_manu">#CCFF00</color>
+    <color name="black">#000000</color>
+    <color name="black_country">#90000000</color>
+    <color name="black_for_blocked_destinations">#95000000</color>
+    <color name="blackshade">#75000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_unselected">#50FFFFFF</color>
+    <color name="whiteshade">#95FFFFFF</color>
+    <color name="white_transparent">#90FFFFFF</color>
+    <color name="im_bg">#3298C2</color>
+    <color name="group_bg">#076E9E</color>
+    <color name="orange">#FF6600</color>
+    <color name="orange_bg">#20FF6600</color>
+    <color name="velas_green">#00580D</color>
+    <color name="velas_brown">#252117</color>
+    <color name="button_text_color">#6D695C</color>
+    <color name="brown">#69490B</color>
+    <color name="grey">#B2B8C5</color>
+    <color name="grey_light">#50B2B8C5</color>
+    <color name="light_black">#292929</color>
+    <color name="brown_light">#D8D2C0</color>
+    <color name="grey_for_info">#D9D9D9</color>
+    <color name="btn_line_clr">#B5AF9F</color>
+    <color name="hdr_line_clr">#D6B743</color>
+    <color name="lv_white_bg">#ededed</color>
+    <color name="blue_bg">#2d5c88</color>
+    <color name="blue_bg_transparent">#902d5c88</color>
+    <color name="border_bg">#b9b9b9</color>
+    <color name="border_of_three_btns">#c19f37</color>
+    <color name="black_transparent">#90000000</color>
+    <color name="black_transparent_for_home">#34000000</color>
+    <color name="black_transparent_for_home_click">#74000000</color>
+
+    <!-- Maps -->
+    <color name="map_black_line">#181818</color>
+    <color name="map_grey_line">#333333</color>
+    <color name="map_green">#879B82</color>
+    <color name="map_dialog_line">#657163</color>
+    <color name="map_row_tag">#BC9191</color>
+    <color name="map_brown_row_selected">#3D3D3D</color>
+    <color name="map_dlg_border">#383838</color>
+    <color name="map_dlg_content">#e8e8e8</color>
+    <color name="map_dlg_url">#ADADAD</color>
+
+    <!-- Weather -->
+    <color name="weather_blue_text">#6DEFF2</color>
+
+    <!-- Volley -->
+
+    <color name="actionbar_title_color">#FF553355</color>
+    <color name="actionbar_title_color_old">#FF224894</color>
+    <color name="background_grid1">#FFeeeeee</color>
+    <color name="background_grid1_cell">#33AAAAAA</color>
+    <color name="topic_title_text">#FF0000BB</color>
+    <color name="topic_text">#ffdddddd</color>
+
+    <!-- CMS -->
+    <color name="green_selection">#469B19</color>
+    <color name="black_line_sign_in">#E5E5E5</color>
+    <color name="login_color">#A9ACB1</color>
+    <!-- <color name="blocked_btn_color">#50FFFFFF</color> -->
+    <color name="login_text_color">#717880</color>
+    <color name="login_btn_text_color">#385487</color>
+    <color name="alarm_btn_sel_color">#47befc</color>
+    <color name="movie_color">#B2B8C5</color>
+    <color name="black_take3">#50FFFFFF</color>
+    
+    
+    <color name="payment_delivery_bg_start">#ffffff</color>
+    <color name="payment_delivery_bg_end">#ffffff</color>
+    
+    <color name="payment_delivery_start">#32E9FB</color>
+    <color name="payment_delivery_end">#39EFFD</color>
+    <color name="payment_delivery_click_start">#B94300</color>
+    <color name="payment_delivery_click_end">#A84100</color>
+    
+    
+    <color name="profile_line">#85AD4402</color>
+    <color name="profile_bg">#AD4402</color>
+    <color name="profile_bg_new">#908d3804</color>
+    <color name="profile_bg_new_white">#90FFFFFF</color>
+    
+    
+    <color name="main_btn_bg">#FF6E00</color>
+    
+    <color name="button_click">#0000ff</color>
+    <!-- <color name="settings_txt_color">#256da5</color> -->
+    <color name="settings_bg_color">#50B94300</color>
+    <color name="settings_bg_color_click">#50FFFFFF</color>
+    <color name="profile_new_color_text">#20568d</color>
+    <color name="text_color_for_count">#35455C</color>
+    <color name="bg_for_count_status">#80f06d0d</color>
+    
+   <!--  <color name="profile_bg">#35cec3</color>
+ -->
 </resources>

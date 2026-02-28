@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/match_wrap"
-    android:layout_gravity="center_horizontal"
-    android:layout_margin="@dimen/_10sdp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/gods_img_size_selectnama"
+    android:layout_margin="@dimen/_5sdp"
+    android:orientation="vertical"
+    android:weightSum="1">
 
-    <RelativeLayout
-        android:id="@+id/bgRL"
-        style="@style/match_wrap"
-        android:background="@drawable/bg_white">
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.75"
+        android:src="@drawable/ic_defaultprofile" />
 
-        <RelativeLayout
-            android:id="@+id/bgGodRL"
-            style="@style/wrap_wrap"
-            android:layout_centerInParent="true"
-            android:background="@drawable/selectgod">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.02" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/grid_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                app:srcCompat="@drawable/ic_defaultprofile" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.24"
+        android:background="@drawable/rounded_corners_4_main"
+        android:orientation="vertical">
 
-        </RelativeLayout>
-    </RelativeLayout>
+        <TextView
+            android:id="@+id/grid_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_4_main"
+            android:background="@drawable/selector_4_unselect_buttons"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/padding_leftright_selnama"
+            android:paddingRight="@dimen/padding_leftright_selnama"
+            android:text="@string/durga_mata"
+            android:textColor="@color/white_unselected"
+            android:textSize="@dimen/textSize_4_createnama" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/grid_text"
-        style="@style/match_wrap"
-        android:layout_below="@+id/bgRL"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="-7dp"
-        android:background="@drawable/unselect_bg_text"
-        android:text="@string/lord_shiva"
-        android:gravity="center"
-        android:textAlignment="center" />
-
-</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_of_save_nama_god"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.15" />
+
+                <Spinner
+                    android:id="@+id/gods_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/select_img"
+                    android:text="@string/selectlanguage"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSize_for_setnama_et" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.04" />
+
+            <ImageView
+                android:id="@+id/god_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="0.16"
+                android:contentDescription="@string/empty_description"
+                android:src="@drawable/rama" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.02" />
+
+                <include layout="@layout/count_status_layout" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:text="@string/no_of_namas_printed"
+                    android:textColor="@color/profile_new_color_text"
+                    android:textSize="@dimen/textSize_for_setnama" />
+
+                <Spinner
+                    android:id="@+id/language_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@drawable/select_img"
+                    android:text="@string/selectlanguage"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSize_for_setnama_et" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:text="@string/choose_the_temple"
+                    android:textColor="@color/profile_new_color_text"
+                    android:textSize="@dimen/textSize_for_setnama" />
+
+                <Spinner
+                    android:id="@+id/choose_the_temple"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@drawable/select_img"
+                    android:text="@string/selectnamam"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSize_for_setnama_et" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:text="@string/print_type"
+                    android:textColor="@color/profile_new_color_text"
+                    android:textSize="@dimen/textSize_for_setnama" />
+
+                <Spinner
+                    android:id="@+id/print_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@drawable/select_img"
+                    android:text="@string/selectlanguage"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSize_for_setnama_et" />
+
+                <TextView
+                    android:id="@+id/name_of_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:text="@string/in_whose_name"
+                    android:textColor="@color/profile_new_color_text"
+                    android:textSize="@dimen/textSize_for_setnama" />
+
+                <EditText
+                    android:id="@+id/namam_type_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@color/white"
+                    android:hint="@string/nama_of_the_person"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSize_for_setnama_et" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:text="@string/hand_written_chant"
+                    android:textColor="@color/profile_new_color_text"
+                    android:textSize="@dimen/textSize_for_setnama" />
+
+                <Spinner
+                    android:id="@+id/handwritten_chant"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@drawable/select_img"
+                    android:text="@string/selectnamam"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSize_for_setnama_et" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/rounded_corners_4_main"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <Button
+                        android:id="@+id/save_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_4_enternama"
+                        android:background="@drawable/selector_4_buttons"
+                        android:gravity="center"
+                        android:text="@string/pay"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_for_et_releasenama" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.87" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0" />
+
+            <include
+                android:id="@+id/main_hdrr"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                layout="@layout/home_hdr_phone" />
+
+            <FrameLayout
+                android:id="@+id/realtabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.775" />
+
+            <LinearLayout
+                android:id="@+id/viewpager_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.87"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="1.0" >
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.985" />
+
+                <com.viewpagerindicator.IconPageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center|bottom"
+                    android:layout_weight="0.015" />
+            </LinearLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                style="@android:style/Widget.TabWidget"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/tab_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

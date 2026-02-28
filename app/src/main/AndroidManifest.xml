@@ -2,202 +2,182 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.telephony"
-        android:required="false" />
+    <!--This version numbering is now controlled in build.gradle-->
 
-    <uses-permission android:name="android.permission.CAMERA" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="32" />
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="32"
-        tools:ignore="ScopedStorage" />
 
-    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-    <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name=".base.MyApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
-        android:hardwareAccelerated="false"
-        android:icon="@drawable/ic_nk_logo_small"
+        android:icon="@drawable/app_icon"
         android:label="@string/app_name"
-        android:largeHeap="true"
-        android:roundIcon="@drawable/ic_nk_logo_small"
-        android:supportsRtl="true"
-        android:theme="@style/AppMaterialTheme">
-
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
-
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".login.SplashActivity"
-            android:exported="true">
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".login.LoginActivity" />
-        <activity android:name=".home.HomeActivity" />
+
         <activity
-            android:name=".chanting.ChantingSelectionActivity"
+            android:name=".SignInActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
         <activity
-            android:name=".chanting.self.SelectGodActivity"
-            android:label="Select God"
+            android:name=".VerifyOtpActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
         <activity
-            android:name=".login.SignupActivity"
+            android:name=".RegisterActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
         <activity
-            android:name=".home.ProfileActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".home.EditProfileActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".chanting.self.ChantingDetailsActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".login.OtpActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" /> <!-- working -->
-        <activity
-            android:name=".settings.SelectChantGodActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Dialog"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".settings.PaymentDialogActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".chanting.self.CreateNormalChantingActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".chanting.chantforcause.CreateChantForCauseActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".karmic.beingHelped.NewBeingHelpedActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".karmic.beingHelped.InviteParticipantsActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".karmic.beingHelped.ParticipantsListActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".karmic.beingHelped.ParticipantsDetailsActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".karmic.helpingOthers.RequestAcceptActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Dialog"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".karmic.beingHelped.SuccessDialogActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Dialog"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".karmic.beingHelped.SelfDetailsActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".karmic.helpingOthers.OthersDetailsActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".karmic.beingHelped.ContactsListActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.namakoti.base.BaseNavigationActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.namakoti.login.LogOutActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Dialog"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".karmic.beingHelped.AddParticipantsActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.namakoti.chanting.self.NewChantDetailsActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.namakoti.karmic.KarmicProfileActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".chanting.WebViewActivity"
-            android:screenOrientation="portrait"
+            android:name=".MainActivityPhone"
+            android:configChanges="keyboardHidden|screenSize"
+            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan" />
 
         <activity
-            android:name="com.namakoti.gcm.CustomDialog"
+            android:name=".IntroductionActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.Dialog"
-            android:windowSoftInputMode="adjustPan" />
+            android:theme="@style/AppTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
 
-        <!-- Firebase Notifications -->
-        <service
-            android:name=".gcm.FcmReceiverService"
-            android:enabled="true"
-            android:exported="true"
-            tools:ignore="ExportedService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
+        <activity
+            android:name=".CropperActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
 
-        <!-- ./Firebase Notifications -->
-        <service android:name=".network.services.DownloadService" />
+        <activity
+            android:name=".CoutryCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
 
-        <receiver
-            android:name=".login.SMSReceiver"
-            android:exported="true">
-            <intent-filter android:priority="99999">
-                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-            </intent-filter>
-        </receiver>
-        <receiver
-            android:name=".gcm.MyPushReceiver"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.push.Broadcast"></action>
-            </intent-filter>
-        </receiver>
+        <activity
+            android:name=".NamasDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".SalutionDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".DateDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".MonthDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".YearDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".CountryDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".web.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".ui.ForGotPassWord"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".HandWrittenImageDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".PaymentDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".LanguagesDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".Namam4SaveNamaDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".TemplesDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".CountDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".PrintTypeDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".web.Container"
+            android:label="@string/title_activity_container"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
     </application>
 
 </manifest>

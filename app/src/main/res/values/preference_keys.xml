@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pref_login_flag_key">PREF_LOGIN_FLAG_KEY</string>
+    <string name="pref_user_id_key">pref_user_id_key</string>
+    <string name="pref_user_name_key">pref_user_name_key</string>
+    <string name="pref_present_running_count_key">pref_present_running_count_key</string>
+    <string name="pref_user_upgrade_key">pref_user_upgrade_key</string>
+    <string name="pref_username_key">pref_username_key</string>
+    <string name="pref_fullname_key">pref_fullname_key</string>
+    <string name="pref_upgrade_amount_key">pref_upgrade_amount_key</string>
+    <string name="pref_email_key">pref_email_key</string>
+    <string name="pref_mobile_otp_key">pref_mobile_otp_key</string>
+    <string name="pref_pwd_key">pref_pwd_key</string>
+    <string name="pref_edit_profile_key">pref_edit_profile_key</string>
+    <string name="pref_referrer_url_key">pref_referrer_url_key</string>
+    <!-- JSON preferences -->
+    <string name="pref_gods_key">pref_gods_key</string>
+    <string name="pref_number_of_languages_key">pref_number_of_languages_key</string>
+    <string name="pref_chants_with_languages_key">pref_chants_with_languages_key</string>
+    <string name="pref_view_profile_key">pref_view_profile_key</string>
+    <string name="pref_user_namas_key">pref_user_namas_key</string>
+    <string name="pref_namas_total_count_key">pref_namas_total_count_key</string>
+    <string name="pref_namas_running_count_key">pref_namas_running_count_key</string>
+    <string name="pref_namas_local_running_count_key">pref_namas_local_running_count_key</string>
+    <string name="pref_voice_over_key">pref_voice_over_key</string>
+    <string name="pref_vibrate_over_key">pref_vibrate_over_key</string>
+    <string name="pref_create_nama_key">pref_create_nama_key</string>
+    <string name="pref_nama_on_orientation_change">pref_nama_on_orientation_change</string>
+    <string name="pref_nama_on_orientation_change_rg_id">pref_nama_on_orientation_change_rg_id</string>
+    <string name="pref_is_from_initialise_tabs_key">pref_is_from_initialise_tabs_key</string>
+    <string name="pref_count_numbers_pd_key">pref_count_numbers_pd_key</string>
+    <string name="pref_print_types_pd_key">pref_print_types_pd_key</string>
+    <string name="pref_temples_pd_key">pref_temples_pd_key</string>
+    
+    <string name="sai_count_key">sai_count_key</string>
+    <string name="shiva_count_key">shiva_count_key</string>
+    <string name="rama_count_key">rama_count_key</string>
+    <string name="hand_written_image_namakoti">hand_written_image_namakoti</string>
+    
+    <!-- Remove while doing signout -->
+    <string name="pref_dispatches_key">pref_dispatches_key</string>
+    <string name="pref_temples_key">pref_temples_key</string>
+    <string name="pref_transactions_key">pref_transactions_key</string>
+    
+    <!-- Printing help -->
+    <string name="total_count_text">Total number of nama chants written till date</string>
+    <string name="printed_count_text">Total number of chants printed till date</string>
+    <string name="on_goingl_count_text">Current count of chants, which are yet to be printed</string>
+
+</resources>

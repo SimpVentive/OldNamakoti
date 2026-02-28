@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:id="@+id/main_hdrr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        layout="@layout/home_hdr_phone" />
+
+    <LinearLayout
+        android:id="@+id/mylayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".CropperActivity" >
+
+        <!--
+             <TextView
+            android:id="@+id/title"
+            style="@style/RoboTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp"
+            android:text="@string/title"
+            android:textSize="30sp" />
+        -->
+
+        <com.canhub.cropper.CropImageView
+            android:id="@+id/CropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_of_cropper_image"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp" >
+
+            <Button
+                android:id="@+id/Button_rotate"
+                style="@style/RoboTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/rotate"
+                android:textColor="#33B5E5"
+                android:textSize="@dimen/text_size_4_introduction" />
+
+            <Button
+                android:id="@+id/Button_crop"
+                style="@style/RoboTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/select_for_crop"
+                android:textColor="#33B5E5"
+                android:textSize="@dimen/text_size_4_introduction" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/croppedImageView"
+            style="@style/RoboTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_of_cropper_image"
+            android:layout_gravity="center|top"
+            android:contentDescription="@string/croppedImageDesc" />
+    </LinearLayout>
+
+</LinearLayout>

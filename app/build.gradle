@@ -1,103 +1,114 @@
 apply plugin: 'com.android.application'
 
+def keystorePropertiesFile = rootProject.file("D:\\MyProjects\\SimpVentive\\keystore.properties")
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
 android {
 
     signingConfigs {
         release {
-            storeFile file('../keys/namakoti.keystore')
-            storePassword 'simpventive7'
-            keyAlias 'namakoti'
-            keyPassword 'simpventive7'
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
         }
 
         debug {
-            storeFile file('../keys/namakoti.keystore')
-            storePassword 'simpventive7'
-            keyAlias 'namakoti'
-            keyPassword 'simpventive7'
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
         }
     }
+
 
     compileSdk 34
     buildToolsVersion '34.0.0'
     useLibrary 'org.apache.http.legacy'
+    namespace 'com.unitol.namakoti'
 
-    namespace 'com.namakoti'
     defaultConfig {
-        applicationId 'com.unitol.namakoti'
-        minSdkVersion 19
-        targetSdkVersion 34
-        versionCode 133
-        versionName '1.35'
-        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        applicationId "com.unitol.namakoti"
+        minSdk 21
+        targetSdk 34
+        versionCode 140
+        versionName '1.40'
         multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        setProperty("archivesBaseName", "Namakoti-Old-GV" + versionCode)
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
-    }
+
     buildTypes {
         release {
+            buildConfigField "String", "BASE_URL", "\"https://namakoti.com/webservice\""
+            buildConfigField "boolean", "DEBUG_FLAG", "false"
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
         }
-
         debug {
+            buildConfigField "String", "BASE_URL", "\"https://oldapptest.namakoti.com/webservice\""
+            buildConfigField "boolean", "DEBUG_FLAG", "true"
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.debug
         }
     }
-    packagingOptions {
-        exclude 'META-INF/DEPENDENCIES'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/NOTICE.txt'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
     }
-  }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/NOTICE', 'META-INF/LICENSE']
+        }
+    }
+    buildFeatures {
+        renderScript true
+        aidl true
+    }
+
+}
 
 dependencies {
+
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.multidex:multidex:2.0.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
 
-    implementation 'androidx.annotation:annotation:1.7.1'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.annotation:annotation:1.9.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.3.2'
+
+    implementation 'androidx.work:work-runtime:2.9.1'
+    implementation 'androidx.browser:browser:1.8.0'
+
+    implementation 'com.vanniktech:android-image-cropper:4.6.0'
+    implementation 'com.nex3z:flow-layout:1.3.3'
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.1'
+    implementation 'com.intuit.ssp:ssp-android:1.1.1'
 
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
 
-    implementation 'com.jakewharton:butterknife:10.2.3'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
-
-    implementation 'com.intuit.sdp:sdp-android:1.1.0'
-    implementation 'com.intuit.ssp:ssp-android:1.1.0'
-
-    implementation 'org.jsoup:jsoup:1.13.1'
-
-    implementation 'com.google.android.material:material:1.11.0'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
-
-    implementation 'com.google.code.gson:gson:2.10.1'
-    implementation 'com.android.volley:volley:1.2.1'
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-
-    //Work Manager dependency
-    implementation 'androidx.browser:browser:1.8.0'
-    implementation 'androidx.work:work-runtime:2.9.0'
-
-    implementation 'com.google.firebase:firebase-analytics:21.5.1'
-    implementation 'com.google.firebase:firebase-crashlytics:18.6.2'
-    implementation 'com.google.firebase:firebase-messaging:23.4.1'
+    implementation 'com.google.firebase:firebase-analytics:22.1.2'
+    implementation 'com.google.firebase:firebase-crashlytics:19.3.0'
+    implementation 'com.android.installreferrer:installreferrer:2.2'
 
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test:runner:1.6.2'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.6.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'org.jetbrains:annotations:25.0.0'
 }
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.crashlytics'

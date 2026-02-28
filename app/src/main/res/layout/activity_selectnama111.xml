@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.04" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.92"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="0.04"
+            android:text="@string/heading"
+            android:textColor="@color/profile_bg"
+            android:textSize="@dimen/textSize_4_selectnama" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="0.34"
+            android:text="Components reuse is an essential concept when we design an application&apos;s User Interface. Android applications are no exception to this rule. In this tutorial we will create an Android activity composed by three major sections (or components): Header, Footer and Content."
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textSize_4_selectnama" />
+
+        <LinearLayout
+            android:id="@+id/imageslayout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:src="@drawable/saibaba" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:src="@drawable/shiva" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:src="@drawable/rama" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0.04" />
+
+        <LinearLayout
+            android:id="@+id/buttonslayout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0.08"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.31"
+                android:background="@drawable/rounded_corners_4_main"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/saibaba_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_4_main"
+                    android:background="@drawable/selector_4_buttons"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_leftright_selnama"
+                    android:paddingRight="@dimen/padding_leftright_selnama"
+                    android:text="@string/create_nama"
+                    android:textColor="@drawable/common_txt_selector"
+                    android:textSize="@dimen/textSize_4_createnama" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.035" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.31"
+                android:background="@drawable/rounded_corners_4_main"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/shiva_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_4_main"
+                    android:background="@drawable/selector_4_buttons"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_leftright_selnama"
+                    android:paddingRight="@dimen/padding_leftright_selnama"
+                    android:text="@string/create_nama"
+                    android:textColor="@drawable/common_txt_selector"
+                    android:textSize="@dimen/textSize_4_createnama" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.035" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.31"
+                android:background="@drawable/rounded_corners_4_main"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/rama_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_4_main"
+                    android:background="@drawable/selector_4_buttons"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_leftright_selnama"
+                    android:paddingRight="@dimen/padding_leftright_selnama"
+                    android:text="@string/create_nama"
+                    android:textColor="@drawable/common_txt_selector"
+                    android:textSize="@dimen/textSize_4_createnama" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.02" />
+
+</LinearLayout>

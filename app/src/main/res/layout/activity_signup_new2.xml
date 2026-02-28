@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.1"
+        layout="@layout/home_hdr_phone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.76"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.14" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.72" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:id="@+id/imageView3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_of_icons"
+                        android:layout_weight="0.18"
+                        android:background="@color/app_color"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <ImageView
+                            android:id="@+id/user_round"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/user" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <EditText
+                        android:id="@+id/username_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.77"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/email_or_phone_no_profile"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/textSize_for_sing_up" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.02" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_of_icons"
+                        android:layout_weight="0.18"
+                        android:background="@color/app_color"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <ImageView
+                            android:id="@+id/pwd_round"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/pwd_img" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <EditText
+                        android:id="@+id/password_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/password_signup"
+                        android:inputType="textPassword"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/textSize_for_sing_up" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.02" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_of_icons"
+                        android:layout_weight="0.18"
+                        android:background="@color/app_color"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <ImageView
+                            android:id="@+id/confirm_pwd_round"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/pwd_img" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <EditText
+                        android:id="@+id/cpassword_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/confirm_pwd_signup"
+                        android:inputType="textPassword"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/textSize_for_sing_up" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.02" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_of_icons"
+                        android:layout_weight="0.18"
+                        android:background="@color/app_color"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <ImageView
+                            android:id="@+id/firstname_round"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/firstname_img" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <EditText
+                        android:id="@+id/fname_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@android:color/transparent"
+                        android:digits="qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM"
+                        android:hint="@string/firstname_signup"
+                        android:inputType="textCapSentences"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/textSize_for_sing_up" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.02" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_of_icons"
+                        android:layout_weight="0.18"
+                        android:background="@color/app_color"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <ImageView
+                            android:id="@+id/lastname_round"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/lastname_img" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <EditText
+                        android:id="@+id/lname_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@android:color/transparent"
+                        android:digits="qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM"
+                        android:hint="@string/lastname_signup"
+                        android:inputType="textCapSentences"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/textSize_for_sing_up" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.02" />
+
+                <Button
+                    android:id="@+id/country_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@drawable/selector_view_profile"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+                    android:paddingRight="@dimen/padding_left_right_of_view_profile"
+                    android:text="Select the country"
+                    android:textColor="@color/black_country"
+                    android:textSize="@dimen/textsize_profile" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.02" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_of_icons"
+                        android:layout_weight="0.18"
+                        android:background="@color/app_color"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <ImageView
+                            android:id="@+id/mobile_icon"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/mobile_img" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.02" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.79"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/country_code"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.22"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/textSize_isd_sing_up" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#500000" />
+
+                        <EditText
+                            android:id="@+id/mobie_edittext"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.78"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/mobile_signup"
+                            android:inputType="number"
+                            android:paddingLeft="3dp"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/textSize_for_sing_up" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corners_4_main"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <Button
+                            android:id="@+id/create_my_account_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_4_signup"
+                            android:background="@drawable/selector_4_buttons"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="@string/submit"
+                            android:textColor="@drawable/common_txt_selector"
+                            android:textSize="@dimen/textSize_for_sing_up" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.05" />
+
+</LinearLayout>

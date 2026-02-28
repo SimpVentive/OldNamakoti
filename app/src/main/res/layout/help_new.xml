@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50FF6600" />
+
+        <include layout="@layout/registration_details" />
+        -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50FF6600" />
+
+        <include layout="@layout/profile_details" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50FF6600" />
+
+        <include layout="@layout/chant_settings_details" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50FF6600" />
+
+        <include layout="@layout/nama_chanting_details" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50FF6600" />
+
+        <!--<include layout="@layout/upgrade_details" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50FF6600" />-->
+
+        <include layout="@layout/print_and_delivery_details" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50FF6600" />
+
+        <include layout="@layout/account_details" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50FF6600" />
+
+        <include layout="@layout/app_version_details" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50FF6600" />
+
+        <include layout="@layout/terms_of_use_help" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50FF6600" />
+
+    </LinearLayout>
+
+</ScrollView>

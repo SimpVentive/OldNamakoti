@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.37"
+            android:background="@drawable/rounded_corners_4_upgrade"
+            android:gravity="center"
+            android:text="@string/username_upgrade"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_4_upgrade" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.06" />
+
+        <TextView
+            android:id="@+id/username_upgrade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.37"
+            android:background="@drawable/rounded_corners_4_upgrade"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_4_upgrade" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.06" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.37"
+            android:background="@drawable/rounded_corners_4_upgrade"
+            android:gravity="center"
+            android:text="@string/amount_upgrade"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_4_upgrade" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.06" />
+
+        <TextView
+            android:id="@+id/amount_upgrade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.37"
+            android:background="@drawable/rounded_corners_4_upgrade"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_4_upgrade" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/rounded_corners_4_main"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pay_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_4_upgrade"
+                android:background="@drawable/selector_4_buttons"
+                android:text="@string/pay"
+                android:textColor="@drawable/common_txt_selector"
+                android:textSize="@dimen/textSize_4_upgrade" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.49" />
+
+</LinearLayout>

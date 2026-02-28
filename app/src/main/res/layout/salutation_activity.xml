@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:padding="@dimen/margin_top_bottem_spinners_in_adapter_2"
+        android:text="Select Nama"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/textSize_for_et_enternama"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/listview_countries"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:fastScrollEnabled="true" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:padding="@dimen/margin_top_bottem_spinners_in_adapter_2"
+        android:text="Cancel"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/textSize_for_et_enternama"
+        android:textStyle="bold" />
+
+</LinearLayout>

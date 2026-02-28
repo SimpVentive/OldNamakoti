@@ -4,27 +4,25 @@
     android:layout_height="match_parent"
     android:baselineAligned="false"
     android:orientation="horizontal"
-
-    android:background="@drawable/login_bg2"
     android:weightSum="1" >
 
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="0.45" >
+        android:layout_weight="0.5" >
 
         <LinearLayout
             android:id="@+id/feather_layout"
-            android:layout_width="@dimen/_100sdp"
-            android:layout_height="@dimen/_100sdp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_centerInParent="true"
             android:gravity="center"
             android:orientation="vertical" >
 
             <ImageView
                 android:id="@+id/image_feather"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_width="@dimen/hand_image_height_width_enternama"
+                android:layout_height="@dimen/hand_image_height_width_enternama"
                 android:layout_gravity="center"
                 android:src="@drawable/hand_written"
                 android:visibility="visible" />
@@ -35,10 +33,10 @@
         android:id="@+id/bottomlinear"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="0.55"
+        android:layout_weight="0.5"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:weightSum="1" >
+        android:weightSum="1.0" >
 
         <ImageView
             android:id="@+id/book_img"
@@ -46,20 +44,19 @@
             android:layout_height="0dp"
             android:layout_weight="0.8"
             android:background="@drawable/book_img"
-            android:contentDescription=""
+            android:contentDescription="@string/empty_description"
             android:visibility="visible" />
 
         <TextView
             android:id="@+id/namam_text"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="0.2"
-            android:text=""
-            android:layout_marginBottom="@dimen/_8sdp"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/_14sdp"
-            android:visibility="visible" />
+            android:text="It is for test"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_for_et_enternama"
+            android:visibility="invisible" />
     </LinearLayout>
 
 </LinearLayout>

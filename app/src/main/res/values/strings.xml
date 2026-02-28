@@ -1,239 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Namakoti</string>
-    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="hello_world">Hello world!</string>
     <string name="button_text_continue">Continue</string>
-    <string name="enter_mobile_number">Please enter your phone number or username to login:</string>
-    <string name="login_with">Login with</string>
-    <string name="unable_response">Unable to get response from server</string>
-    <string name="dont_have_account">"Don't have an account?"</string>
-    <string name="sign_up">Sign Up</string>
-    <string name="et_hint">Enter your Username / Phone Number</string>
-    //Otp Activity
-    <string name="verifymobile">Verify your number</string>
-    <string name="otpmessage">we\'ve sent an OTP to </string>
-    <string name="wait">Waiting for OTP..........</string>
-    //Home Activity
-    <string name="self_chanting">Self Chanting</string>
-    <string name="karmic_chanting">Karmic Chanting</string>
-    <string name="active_chants">Active Chants</string>
+    <!-- homeScreen -->
+    <string name="app_name">Namakoti</string>
+    <string name="signin">Sign in</string>
+    <string name="introduction">Introduction</string>
+    <string name="register">Register</string>
+
+    <!-- signin -->
+    <string name="login">Login</string>
+    <string name="forgot_pwd"><u>Forgot Password</u></string>
+    <!-- <string name="username">USER NAME</string> -->
+    <string name="username">Username</string>
+    <string name="mobile_number_signin">Mobile Number</string>
+    <string name="otp_signin">OTP</string>
+    <string name="password">Password</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="resend_otp"><u>Resend OTP</u></string>
+    <!-- Registration -->
+    <string name="cpassword">CONFIRM PASSWORD</string>
+    <string name="profile">Profile</string>
+    <string name="reconfirmpassword">RE CONFIRM PASSWORD</string>
+    <string name="salution">SALUTION</string>
+    <string name="firstname">FIRST NAME</string>
+    <string name="lastname">LAST NAME</string>
+    <string name="middlename">MIDDLE NAME</string>
+    <string name="dob">DATE OF BIRTH</string>
+    <string name="address1">Address 1</string>
+    <string name="address2">Address 2</string>
+    <string name="pobox">DOOR NO</string>
+    <string name="postolcode">POSTAL CODE/ZIP CODE</string>
+    <string name="city">City</string>
+    <string name="state">STATE</string>
+    <string name="country">COUNTRY</string>
+    <string name="email">EMAIL</string>
+    <string name="moblie">MOBILE</string>
+    <string name="pwd_not_same">Password and Confirm password must be same</string>
+    <string name="enter_pwd">Please enter the password</string>
+    <string name="delete_account_error">Delete Account Error</string>
+    <string name="signup_error">Signup error</string>
+    <string name="error">Error</string>
+    <string name="signin_error">SignIn error</string>
+    <string name="pwd_error">Change Password</string>
+    <string name="save_nama_error">Save nama error</string>
+    <string name="save_nama_aditional_key">_savenama</string>
+    <string name="signup_success">Signup success</string>
+    <string name="signin_request">Do you want to signin?</string>
+    <string name="email_exist">Email already exist , Please try with different one.</string>
+    <string name="username_exist">Username already exist , Please try with different one.</string>
+    <string name="phone_no_exist">Phone number already exist , Please try with different one.</string>
+    <string name="signout_dlg_msg">If you log out, you will have to re-login by using internet/WiFi connection in order to continue.</string>
+    <string name="signout">Sign out</string>
+    <string name="get_god_list_error">No Namas available</string>
+    <string name="delete_account_dlg_msg">If you delete Namakoti Account, you will have to re-register by using internet/WiFi connection in order to continue.</string>
+    <string name="delete_account">Delete Namakoti Account</string>
+
+    <!-- settings page -->
     <string name="settings">Settings</string>
+    <string name="profile1">Profile</string>
+    <string name="setnama">Set Nama</string>
+    <string name="chant_settings">Chant Gods</string>
+    <string name="enternama">Enter Namam</string>
+    <string name="publishnama">Publish Nama</string>
+    <string name="application_and_site">The Application &amp; the Site</string>
+    <string name="accountdetailes">Payment Details</string>
+    <string name="jurisdiction_and_gov">Jurisdiction &amp; Governing Law</string>
+    <string name="juridiction_law_text">These Terms and any disputes arising out of such Terms are governed by the laws of India and are subject to the jurisdiction of the courts in Hyderabad, Andhra Pradesh only.</string>
+    <string name="third_party_cookies">Third party cookies might collect aggregated information like the frequency of your visit or the length. No Personal or Professional information is collected. The information collected might be used for analytics. 
+A cookie may also be placed by our advertising partners. Such cookies are used only for purposes of tracking the effectiveness of advertising on our Website and no personal or professional information is gathered from you by the use of these cookies, nor is this information shared with any third parties. Third - party advertising companies or advertisement providers may also employ cookies. Such information will be anonymous and will be to measure the effectiveness of ads.
+Most Web browsers automatically accept cookies. In case you do not want to accept our cookie policy, you can change the settings of your browser, blocking cookies may affect your user experience</string>
+    <string name="cookies1">To estimate our audience size and usage pattern</string>
+    <string name="cookies2">To store information about Your preferences, and so allow us to customise our Site according to Your individual interests</string>
+    <string name="cookies3">To speed up Your searches</string>
+    <string name="cookies4">To recogniseYou when You return to our Site</string>
+    <string name="cookies5">Details of Your visits to our Site including, but not limited to, traffic data, location data, weblogs and other communication data, whether this is required for our own billing purposes or otherwise and the resources that You access</string>
+    <string name="cookies6">Any other information You provide to us in connection with Your use of the website</string>
+    <string name="cookies7">Payments are routed through Times of Money</string>
+    <string name="cookies8">We do not save your personal or professional information using cookies. We only use cookies to personalize your experience</string>
+    <string name="how_we_use_cookies1">We may collect information about Your computer, including, where available, Your IP address, operating system and browser type, for system administration and to report aggregate information to our business partners. This is statistical data about our users\' browsing actions and patterns, and does not identify any specific individual or personal information.
+For the same reason, we may obtain information about Your general internet usage by using a cookie file which is stored on the hard drive of Your computer. Cookies contain information that is transferred to Your computer\'s hard drive. They help us to improve our Site and to deliver a better and more personalised service. They enable us:</string>
+    <string name="what_are_cookies1">Cookies are files or pieces of information that may be stored on your computer (or other internet enabled devices, such as a smart phone or tablet) when you visit our site. Cookies are stored in your browser\'s file directory. Next time you visit the site, your browser will read the cookie and relay the information back to the website or element that originally set the cookie. A cookie will usually contain the name of the website from which the cookie has come from, the "lifetime" of the cookie (i.e. how long it will remain on your device), and a value, which is usually a randomly generated unique number.</string>
+    <string name="your_concent1">By using our website, including our mobile applications you legally accept all our Terms and Conditions, under all headers, listed here. If you are using Namakoti.com on behalf of a company or a group, you are nevertheless individually bound by this Agreement even if your company or group has a separate agreement with us.
+By using the Namakoti.com Site, you are consenting to our use of cookies in accordance with this Cookie Policy. If you do not agree to our use of cookies in this way, you should set your browser settings accordingly or not use the Namakoti.com Site. If you disable the cookies that we use, this may impact your user.</string>
+    <string name="disclosure_of_ur_info1">\tI.\tFor provision of services to You on or through the website.</string>
+    <string name="disclosure_of_ur_info2">\tII.\tIn he event that we sell or buy any business or assets, in which case we may disclose Your personal data to the prospective seller or buyer of such business or assets.</string>
+    <string name="disclosure_of_ur_info3">\tIII.\tIf we are under a duty to disclose or share Your personal data in order to comply with any legal obligation, or in order to enforce or apply our Terms or relevant terms and conditions of supply of goods, services and/or information and other agreements; or to protect the rights, property, or safety of our employees, customers, or others. This includes exchanging information with other companies and organisations for the purposes of fraud protection and credit risk reduction.</string>
+    <string name="disclosure_of_ur_info4">\tIV.\tTo our associate companies which offer services along the similar lines</string>
+    <string name="use_made_of_info1">To send promotional invites or brand awareness emails pursuant to information from you</string>
+    <string name="use_made_of_info2">To send out registration invitations, in the name of the member who has referred a potential member</string>
+    <string name="use_made_of_info3">To ensure that content from our Site is presented in the most effective manner for You and for Your computer;</string>
+    <string name="use_made_of_info4">To provide You with information, products or services that You request from us or which we feel may interest You, where You have consented to be contacted for such purposes;</string>
+    <string name="use_made_of_info5">To carry out our obligations arising from any contracts entered into between You and us;</string>
+    <string name="use_made_of_info6">To allow You to participate in interactive features of our service, when You choose to do so; and</string>
+    <string name="use_made_of_info7">To notify You about changes to our service.</string>
+    <string name="use_made_of_info8">We may also use Your data, or permit selected third parties to use Your data, to provide You with information about goods and services which may be of interest to You and we or they may contact You about these by e-mail, post or telephone. Where we permit selected third parties to use Your data, we (or they) will contact You by electronic means only if You have consented to this.</string>
+    <string name="information_tex9">We automatically log generic session information, which is anonymous and not linked to any Personal Information. Session data consists of things such as IP address, operating system and type of browser software being used and the activities conducted by the user while on the Website.</string>
+    <string name="information_tex8">Payments are routed through Times of Money or Paypal </string>
+    <string name="information_tex7">Any other information You provide to us in connection with Your use of the website.</string>
+    <string name="information_tex6">Details of Your visits to our Site including, but not limited to, traffic data, location data, weblogs and other communication data, whether this is required for our own billing purposes or otherwise and the resources that You access.</string>
+    <string name="information_tex5">Details of transactions You carry out through our Site and of the fulfillment of Your orders.</string>
+    <string name="information_tex4">References of potential members that You may provide.</string>
+    <string name="information_tex3">Information, if provided by You to complete surveys that we use for research purposes.</string>
+    <string name="information_tex2">A record of the correspondence in the event You contact us.</string>
+    <string name="information_tex1">We may collect and process the following data about You:
+Information that You provide by filling in forms on our Site, including information provided at the time of registration, subscription, posting material or requesting further services. We may also ask You for information, for example,</string>
+    <string name="termination_and_agreement">Termination of Agreement</string>
+    <string name="terms_and_use"><u>Terms of Use</u></string>
+    <string name="contact_us"><u>Contact Us</u></string>
+    <string name="termination1">You may terminate the agreement with us by cancelling your Account</string>
+    <string name="termination2">Namakoti.com reserves the right to terminate the agreement on grounds that include, but not limited to -</string>
+    <string name="termination3">I.\tInfringement of Copyrights</string>
+    <string name="termination4">II.\tBreach of agreement</string>
+    <string name="termination5">III.\tAbuse or Misuse of services</string>
+    <string name="termination6">IV.\tCreation of false or multiple accounts</string>
+    <string name="termination7">V.\tPosting of inappropriate material </string>
+    <string name="termination8">VI.\tUsing the platform for other than intended use</string>
+    <string name="upgrades2">In case the User disputes the refund policy for any reason whatsoever, the dispute shall be taken up on a case-to-case basis by Namakoti. In the event of Namakoti deciding the dispute in User\'s favour, Namakoti shall refund the decided amount without any interest to the User and payments shall be made by cheque. </string>
+    <string name="upgrades1">The User shall not be refunded the monies paid for the purpose of Upgrade, however, in case of monies paid by the user for the purpose of Printing may be returned to him/her if it is ascertained that the printing and delivery did not happen as agreed. The refund so made shall be decided by Namkoti, taking into consideration various elements for the order under consideration. </string>
+    <string name="indemnification_text">You agree to indemnify, defend and hold harmless Namakoti and the Site’s Users, its and their respective officers, directors, employees, agents, licensors, and suppliers from and against any and all losses, liabilities, claims, damages, costs and expenses (including legal fees and disbursements in connection therewith and interest chargeable thereon) asserted against or incurred by Namakoti that arise out of, result from, or may be payable by virtue of, any breach or non-performance of any representation, warranty, covenant or agreement made or obligation to be performed by You pursuant to these Terms. </string>
+    <string name="intelectual2">Namakoti believes that some of the information on this Site as well as underlying business model has high commercial value and any use of the same or replication of same without consulting us shall be treated as loss of business for us and accordingly recovered from You in case of use of the same for pursuing Your own business interests. End User shall not use or reproduce content obtained from the service for or in connection with any other listing service or device.</string>
+    <string name="intelectual1">All materials appearing on this Site, including site design, text, graphics, icons interfaces, and the selection, assembly and arrangements are owned or licensed by Namakoti. All materials appearing on this Site, including site design, text, graphics, icons interfaces, and the selection, assembly and arrangements are owned or licensed by Namakoti. Any other use of materials on this Site, including but not limited to, reproduction for purposes other than those noted on our Site, modification, transmission, display, distribution or republication, without the prior written permission of Namakoti is strictly prohibited. Users are not permitted to use "web crawlers" or other types of software or hardware technology to automatically download large amounts of materials from the Site. Elements of the website are also protected by trademark, copyright, trade dress and other laws and may not be imitated in whole or in part on other websites.</string>
+    <string name="terms5">By using Website and the App, you legally accept.</string>
+    <string name="terms4">While in normal circumstances, Namakoti nor its employees will be either asking for your login credentials or other related information.  However, in order to respond to your needs, and/or comply with laws, and/or to meet specific requirements that you may have, you shall hereby consent Namakoti and its employees and agents to access your account and records on a case-by-case basis to investigate complaints or other allegations or suspected abuse. </string>
+    <string name="terms3">App and the Website, provide users with an opportunity to chant, write, scan and upload and order for printing of various Hindu God\'s names. The App and Site provide for a free and a paid version, the details of which are provided in the App and the Website.  Whenever a user downloads or access the Website, he/she agrees to provide, update and maintain accurate information about himself/herself and that such information and the accuracy thereof are the prerogative of the user alone.  You will be responsible for maintain your UserID and Password, and you may change your password by following instructions on the App or Website. You agree that your account, ID, and password may not be transferred or sold to another party. You shall also agree to immediately notify us of any unauthorized use of your account or any other breach of security known to you.</string>
+    <string name="terms2">By using our Anrodi App(referred to as App) and/or its associated website, www.Namakoti.com (referred to as website) you legally accept all our Terms and Conditions, under all headers, listed here. If you are using the App or the website  on behalf of a  group or any religious organization, you are individually bound by this Agreement even if your group or organization has a separate agreement  with us. </string>
+    <string name="terms1">You are kindly requested to go through these Terms and Conditions before using the Android Application or the associated web site, and that by download and/or accessing the site, you agree to these Terms and Conditions. These Terms and Conditions, may be changed from time to time, because of changes in technology or developments from our end, </string>
+    <string name="what_is_namakoti"><u>What is Namakoti</u></string>
+    <string name="instructions_on_how"><u>Instructions on how to write Nama Koti</u></string>
+    <string name="instructions_on_how_text">While we don\'t ourselves prescribe any particular rules for using this application, we believe that that in the interest of the Bhakta that it is would be beneficial to adhere to the following when Chanting God’s name using NamaKoti.</string>
+    <string name="what_is_namakoti_text">In the Hindu Dharma, it is said that writing a God\'s name 10 million times or One Crore times can enable the soul to reach salvation.  While many of us would like to do this, we are often caught with time pressures – to write, keep track of the writing and finally have the books in which they are written printed &amp; sent to the appropriate temples.  Now with NAMAKOTI APPLICATION, you can have all this done using your smartphone. 
+ 
+\n\nSo, whether you are Rama / Shiva / Sai Devotee, you can now use your smartphone for constant ‘diava chintana’ – or constant remembrance and utterance of God\'s name – enabling you to cleanse your thoughts and focus on the Supreme Being. 
+We have built user interfaces to suit your style of chanting God\'s name; so depending on your specific need for a given time, you could choose
+Swipe and Chant – Use simple finger based swipe utility to keep chanting God\'s name
+\nKey-in Mode – Use preselected God\'s name and chant using a simple keyword select option
+\nJapamala Mode – We know that some of us would like to use the  Japamala or the Rosary for chanting God\'s name.  To meet this specific requirement of yours, we have provided you with the e-Japamala interface. </string>
+    <string name="what_is_namakoti_text2">As you write (chant) the name of your favourite God or Kula Daivam, you can use the unique facility provided by Namakoti to have your Namas printed and mailed to temples – either of your choice or those that are usually know for accepting such books (eg. Bhadrachalam, in Telangana, for Rama Koti).  
+We have also provided with a facility where in you can upload scanned images of your manuscript, that is write the God\'s name in your own handwriting, scan this using the camera on your smartphone, have that image uploaded. We will then have the books printed with this, thereby giving you the satisfaction of seeing your own handwriting in the printed books. </string>
+    <string name="jai_sri_ram_namakoti">JAI SRI RAM  *  OM NAMAH SHIVAYA * OM SRI SAI</string>
+    <string name="in_the_hindu_darma">In the Hindu Dharma, it is said that writing a God\'s name 10 million times or One Crore times can enable the soul to reach salvation.  While many of us would like to do this, we are often caught with time pressures – to write, keep track of the writing and finally have the books in which they are written printed &amp; sent to the appropriate temples.</string>
+    <string name="nowwith_nama_koti">\n\nNow With NAMAKOTI Application, You Can Have All This Done using your Smartphone.</string>
+    <string name="so_whether_you_are">\n\nSo, whether you are Rama Bhakta, Shiva Bhakta or a Sai Devotee, you can now use your Smartphone for constant ‘dayva chintana’ – or constant remembrance and utterance of God’s name – enabling you to cleanse your thoughts and focus on the Supreme Being.
+        \n\nWe have built user interfaces to suit your style of chanting God’s name; so depending on your specific need for a given time, you could choose.
+        \n</string>
+    <string name="swipechant_count_text2">\n\nNow With NAMAKOTI Application, You Can Have All This Done using your Smartphone.</string>
+    <string name="swipechant_count"><u>Swipe and Chant</u></string>
+    <string name="namakoti_hiperlink"><a href="http://www.namakoti.com/">www.Namkoti.com</a></string>
+    <string name="email_hiperlink"><a href="mailto:info@namakoti.com\">info@namakoti.com</a></string>
+    <string name="swipechant_count_text">Use simple finger based swipe utility to keep chanting God’s name.\n</string>
+    <string name="key_in_mode"><u>Key-in Mode</u></string>
+    <string name="terms_of_use_of_site">Terms of use of Site and Restrictions </string>
+    <string name="terms_of_use_of_site_text">You agree not to use any device, software or routine to interfere with the proper working of the Site or which is intended to damage, interfere with, surreptitiously intercept or expropriate any system, data or personal information. You agree not to take any action (including without limitation, spamming) that imposes an unreasonable load on our infrastructure. You agree not to take any actions which may undermine the integrity of our system or the Services, uploading of files or content that contains material that violates the intellectual property rights of others. You are solely responsible and will comply, at Your own expense, with all applicable laws and regulations regarding Your use of the Services and the transfer of the technologies or information with which You are involved, including without limitation, import/export requirements, and Namakoti expressly disclaims any liability or responsibility thereto. You shall not use the Services in any manner, or in furtherance of any activity that may cause Namakoti to be subject to investigation, prosecution, or legal action. </string>
+    <string name="key_in_mode_text">Use preselected God’s name and chant using a simple keyword select option.\n</string>
+    <string name="japa_mala_mode"><u>Japamala Mode</u></string>
+    <string name="japa_mala_mode_text">We know that some of us would like to use the  Japamala or the Rosary for chanting God’s name.  To meet this specific requirement of yours, we have provided you with the e-Japamala interface.\n</string>
+    <string name="contact_us_text">If there are any questions regarding this Terms &amp; Conditions of use of this Website and its services, You may contact us at the coordinates below:</string>
+    <string name="print_and_send">Print &amp; Send</string>
+    <string name="contact_us_text_2">Plot No. 2, 1st Floor Simhapuri Colony,\nWest Marredpally,Secunderabad-500 026.\nMobile: +91 8008571122\nTelephone: +91 40 40265661</string>
+    <string name="print_and_send_text">As you write (chant) the name of your favorite God or Kula Dayvam, you can use the unique facility provided by Namakoti to have your Namas printed and mailed to temples – either of your choice or those that are usually know for accepting such books (eg. Bhadrachalam, in Telangana, for Rama Koti).\n</string>
+    <string name="instructions_how_to_write">Instructions on how to write Nama Koti\n</string>
+    <string name="instructions_how_to_write_text"> While we don’t ourselves prescribe any particular rules for using this application, we believe that in the interest of the Bhakta that it is would be beneficial to adhere to the following when Chanting God’s name using NamaKoti.</string>
+    <string name="instructions_how_to_write_text2">\nPreferably start the Chanting process, after taking your bath.
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello Self Chanting fragment</string>
-    <string name="title_activity_self_chanting_list">SelfChantingListActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_activity_chanting_selection">ChantingSelectionActivity</string>
-    <string name="select_god">Select God</string>
-    <string name="select">Select</string>
-    <string name="english">English</string>
+\n\nDonot write or Chant the name, when doing activities such as eating, attending natures call and other similar activities.
+
+\n\nPlease focus on the God when writing/chanting his name.  Technology is being used as a tool to help you which hitherto made the whole process cumbersome, bit that doesnot however mean you give up the basic tenants of the processes.  
+
+\n\nRemember that Chanting a God’s name is the most important way of reaching to the Supreme Being and that it should be done with Devotion and Dedication showing the highest of respect and sincerity in the process.  </string>
+    <string name="instructions_how_to_write_texxt">While we don\'t ourselves prescribe any particular rules for using this application, we believe that that in the interest of the Bhakta that it is would be beneficial to adhere to the following when Chanting God\'s name using NamaKoti.</string>
+    <string name="logout">Logout</string>
+    <string name="selectnama">Select Nama</string>
+    <string name="change_pwd">Change Password</string>
+    <string name="print_details">Print Details</string>
+    <string name="print_and_db">Print &amp; Deliver Book</string>
+    <string name="print_type">Print type</string>
+    <string name="store">Store</string>
+    <!-- setNama -->
+    <string name="rama">Rama</string>
     <string name="language">Language</string>
+    <string name="selectlanguage">Jai Sri Ram</string>
     <string name="namam">Namam</string>
-    <string name="om_namahshivaya">Om NamahShivaya</string>
-    <string name="no_of_chants">No. of chants</string>
-    <string name="start_chanting">Start Chanting</string>
-    <string name="title_activity_self_chanting_new">SelfChantingNew</string>
-    <string name="cause">Cause</string>
-    <string name="name_of_person">Name of Person</string>
-    <string name="recent_activity">Recent Activity</string>
-    <string name="self_chanting_ac">Self Chanting</string>
-    <string name="username">Name</string>
-    <string name="phone">Phone number</string>
-    <string name="total_count">Total</string>
-    <string name="ongoing">Ongoing</string>
-    <string name="printed_count">Printed</string>
-    <string name="normal_chanting">Normal Chanting</string>
+    <string name="in_whose_name">In whose name to be printed</string>
+    <string name="note"><u>Note:</u></string>
+    <string name="chanting_beyond">Chanting beyond 10000</string>
+    <string name="chanting_beyond2"> Beyond 10000 chants, you need to upgrade your account by paying ONE TIME UPGRADE FEE of INR 121/ USD 2.5, for which you can chant namas of all the gods and upload of handwritten chant for printing.</string>
+    <string name="you_need_to_pay">You need to pay INR 121/USD 2.5 for upgrading your account. The upgrade enables you to</string>
+    <string name="one_time_upgrade">ONE TIME UPGRADE FEE:</string>
+    <string name="beyond_ten_thousand">Beyond 10000 chants, you will need to upgrade your account by paying INR 116 or USD 2</string>
+    <string name="extra_charges">There will be extra charges, if you wish to print the nama chants and delivered to a temple of your choice</string>
+    <string name="selectnamam">Jai Sri ram/Others</string>
+    <string name="nameoftheperson">Name Of The Person</string>
+    <string name="nameoftheperson1">Name Of The Person</string>
+    <string name="voiceover">Voice Over</string>
+    <string name="on_voice">on</string>
+    <string name="off_voice">off</string>
+    <string name="on_vibrate">on</string>
+    <string name="off_vibrate">off</string>
+    <string name="save">Save</string>
+    <string name="edit_profile_vp">Edit Profile</string>
+    <string name="save_chant">Save Chant</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="set_nama">Set Nama</string>
+    <string name="start_chanting">Start Chanting by selecting the namam</string>
+    <string name="select_language_text">Select the Language and Nama of your choice</string>
+    <string name="no_nama">No Nama</string>
+    <string name="selected_god">Selected God</string>
+    <string name="set_nama_first">Set the Nama first before going to chant</string>
+    <string name="upgrade_text">You have to upgrade for further chanting</string>
+    <string name="upgrade_text_for_another_god">You have to upgrade for chanting another god</string>
 
+    <!-- Release Nama -->
+    <string name="browse">Browse</string>
+    <string name="enter">Enter</string>
+    <string name="no_of_namas_printed">No of Nama\'s to be Printed</string>
+    <string name="nama_of_the_person">Name of the Person</string>
+    <string name="choose_the_temple">Choose The Temple</string>
+    <string name="hand_written_chant">Hand written Chant</string>
+    <string name="upload_specimen_handwritten">Upload specimen Handwritten manuscript</string>
+
+    <!-- enternama -->
+    <string name="countstaus">Count Status</string>
+    <string name="chatting_options">Chanting Options</string>
+    <string name="counttotal"><u>Total</u></string>
+    <string name="countprinted"><u>Printed</u></string>
+    <string name="count_ongoing"><u>On Going</u></string>
+    <string name="countrunning">Running</string>
+    <string name="draganddrop">Drag and Drop</string>
+    <string name="keytouch">Key Touch</string>
+    <string name="srirama">Sri Rama</string>
+
+    <!-- publishnama -->
+
+    <string name="noofnamasprinted">No Of Namas Printed</string>
+    <string name="choosethetemple">Choose The Temple</string>
+    <string name="handwrittenchat">Hand Written Chat</string>
+
+    <!-- String Resourcess for diff langues... -->
+    <string-array name="eng_sai_list">
+        <item>Sai</item>
+        <item>Sai Ram</item>
+        <item>Sai Saranam</item>
+    </string-array>
+    <string-array name="eng_shiva_list">
+        <item>namashivaya</item>
+        <item>samboshankara</item>
+        <item>hara hara mahadeva</item>
+    </string-array>
+    <string-array name="eng_rama_list">
+        <item>Rama</item>
+        <item>Sri rama</item>
+        <item>Raghu rama</item>
+    </string-array>
+    <string-array name="tel_rama_list">
+        <item>రామ</item>
+        <item>శ్రీ రామ</item>
+        <item>రఘు రామ </item>
+    </string-array>
+    <string-array name="tamil_rama_list">
+        <item>ராம</item>
+        <item>ஸ்ரீ ராம</item>
+        <item>ரகு ராம </item>
+    </string-array>
+    <string-array name="hindi_rama_list">
+        <item>राम</item>
+        <item>श्री राम</item>
+        <item>रघु राम </item>
+    </string-array>
+
+    <!-- payment details -->
+    <string name="siva_ram_sai">Siva/Ram/Sai</string>
+    <string name="payment">Payment Details</string>
+    <string name="delivery">Delivery Details</string>
+
+    <!-- View Profile -->
+    <string name="username_profile">User name</string>
+    <string name="gothram_profile">Gothram</string>
+    <string name="name_profile">Name</string>
+    <string name="gender">Gender</string>
+    <string name="password_profile">Password</string>
+    <string name="salutation">Salutation</string>
+    <string name="re_confirm_pwd_profile">Re Confirm Password</string>
+    <string name="salution_profile">Salutation</string>
+    <string name="first_name_profile">First Name</string>
+    <string name="last_name_profile">Last Name</string>
+    <string name="dob_profile">Date of Birth</string>
+    <string name="please_select_ur_country">Please select your country</string>
+    <string name="date">Date</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="address1_profile">Address 1</string>
+    <string name="address2_profile">Address 2 </string>
+    <string name="po_box_profile">Po Box</string>
+    <string name="postal_code_profile">Postal code/Zip Code</string>
+    <string name="state_profile">State</string>
+    <string name="country_profile">Country</string>
+    <string name="email_profile">Email</string>
+    <string name="email_or_phone_no_profile">Email/Phone/Username</string>
+    <string name="mobile_profile">Mobile</string>
+    <string name="sign_in_different_user"><u>Already user\nlogin as a different user</u></string>
+
+    <!-- Sign Up -->
+
+    <string name="create_my_account">Create My Account</string>
+    <string name="submit">Submit</string>
+    <string name="username_signup">Username</string>
+    <string name="password_signup">Password</string>
+    <string name="confirm_pwd_signup">Confirm Password</string>
+    <string name="firstname_signup">First Name</string>
+    <string name="name_signup">Name</string>
+    <string name="lastname_signup">Last Name</string>
+    <string name="mobile_signup">Mobile</string>
+    <string name="mobile_no_signup">Mobile Number</string>
+
+    <!-- Select Nama -->
+    <string name="create_nama">Create Nama</string>
+    <string name="heading">History of Nama Japam</string>
+    <string name="select_god_for_chant">Select the God you want to chant</string>
+    <string name="enter_the_name_of_the_person">Enter the name of the person</string>
+
+    <!-- Change Password -->
+
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="apply_change">Apply Change</string>
+
+    <!-- Upgrade -->
+    <string name="username_upgrade">User name</string>
+    <string name="amount_upgrade">Amount</string>
+    <string name="pay">Pay</string>
     <string name="japamala_nama_description">Move the japamala bead upwards or downwards to write the nama.</string>
     <string name="write_nama_description">Drag  the feather into the book to write the nama.</string>
     <string name="keytouch_nama_description">Touch the orange keys in the sequence order to write the nama.</string>
+    <string name="registration_help"><u>Registration</u></string>
+    <string name="profile_help"><u>Profile</u></string>
+    <string name="chant_setiings_help"><u>Chant Settings</u></string>
+    <string name="nama_chanting_help"><u>Nama Chanting</u></string>
+    <string name="upgrade_help"><u>Upgrade</u></string>
+    <string name="print_deliver_help"><u>Print and Deliver</u></string>
+    <string name="account_settings_help"><u>Account Settings</u></string>
+    <string name="terms_and_conditions_help"><u>Terms &amp; Conditions</u></string>
+    <string name="chantings_options_help">Write/ Japa mala / Key Touch Chant Option.</string>
+    <string name="you_need_to_register">You need to register before you proceed.</string>
+    <string name="click_on_help">Click on,  the create Nama button for setting the Nama for the selected god.</string>
+    <string name="create_ur_detailed">Create your detailed profile for processing further requirements on the portal.\nClick on the update icon.\nEnter your personal details.</string>
+    <string name="regi_1">Enter a valid email address/mobile number/user name.  This will be your user id.</string>
+    <string name="regi_2">Enter the password  and confirm the same.  Your password should have alteast 5 characters.</string>
+    <string name="regi_3">Enter your  First and Last name.</string>
+    <string name="regi_4">Enter the Mobile number for future communications.</string>
+    <string name="regi_5">Select the country for populating the ISD Code for your mobile number.</string>
+    <string name="regi_6">Click on the "Submit" button for confirming the details for user creation.</string>
+    <string name="prof_1">Date of birth</string>
+    <string name="prof_2">Gender</string>
+    <string name="prof_3">Address</string>
+    <string name="prof_4">Mobile Number</string>
+    <string name="prof_5">Gothram</string>
+    <string name="prof_6">Email Address</string>
+    <string name="pd_1">Step 1: Select the nama count to be printed.</string>
+    <string name="pd_2">Step 2: Select the temple of your choice for delivering the book.</string>
+    <string name="pd_3">Step 3: Enter the name of the person to be printed on the book; default name shall be the name of the registered person.</string>
+    <string name="pd_4">Step 4:  Choose print type.  The default setting is that of a book.</string>
+    <string name="pd_5">Step 5: You have an option of having the namas printed as if they were actually written by you. For doing a manuscript like printing, please follow the steps below </string>
+    <string name="pd_6">Click or select on Yes to manuscript printing</string>
+    <string name="pd_7">Ensure that you have a image of your ‘manuscript’ is uploaded on your device.  In case you don’t have one, use the camera on your phone to capture the image.  Once you have captured it, move the image to the Image Gallery (by default a photo taken will be in the gallery).</string>
+    <string name="pd_8">Open the image that you want to upload</string>
+    <string name="pd_9">You will need to crop the image before it can be used for printing. Cropping is nothing but ensuring that the image fits a pre-determined size</string>
+    <string name="pd_10">To crop select the Cropping Tool – this will throw up a checked box around the image. Drag the borders on the image. Once you are sure that the image that you want is covered by the box, you are ready to upload that for printing</string>
+    <string name="pd_11">Click on the Back Button on your device</string>
+    <string name="pd_12">The image that will be used for printing will now appear just above the Pay button.</string>
+    <string name="pd_13">Step 6: Once you are done with the above steps, click on the Pay button which will redirect you to the payment gateway. You can choose the most suitable payment option.</string>
+    <string name="pd_14">Disclaimer : The total charges for various activities (Printing / Shipping / Temple expenses) are based on tariff rates mentioned by various vendors and these are all indicative prices.</string>
+    <string name="print_and_delivery_help">Use the unique feature of Namakoti to have your Namas printed and delivered to the temples of your choice. Follow the following sequence of steps to do this</string>
+    <string name="upgrade_1">Namakoti’s uses a Freemium model – that is  combination of Free and Premium payment model.  So,  as a free user you can chant Nama for any God upto 10000 times.  However if you want to 	 		Chant for more than 10,000 times, and/or
+	Print what you have chanted and sent to the Temple of your 	choice, You will have to upgrade your account to a Premium one, by paying INR 121 (for Indian customers) or USD 2.5 (for international customers). </string>
+    <string name="upgrade_2">If you decide to upgrade your application, then Click on the upgrade button option shown in your Chant screen.   Which in turn will give you two options
+\n I.\t  Upgrade and Print 
+\n II.\t Upgrade and continue, which implies you would like to 	exercise you print option at a later point of time</string>
+    <string name="upgrade_3">etc</string>
+    <string name="upgrade_4">etc</string>
+    <string name="upgrade_5">etc</string>
+    <string name="account_details_text">Click on the Transaction Tab, to view the all the print requests and payment details of your past transactions.\nClick on the Delivery  Tab, to view the all the statuses of the deliveries of  nama books</string>
+    <string name="chant_setgs_1">Select the chant, which you have registered for chanting.</string>
+    <string name="chant_setgs_2">Once you start chanting, a counter helps keep track of the number of times you chant the God’s name. There are three different counters you will see on the screen.  Total Count gives you the number of times you have chanted God’s name, since you registered started using Namakoti.  Print Count, gives the number of Nama’s you have ordered to be printed and delivered.  Running Count gives the number of chants, since you last print order. For example, if you have chanted 15650 times since registration and then ordered a print of say 10,000 to be printed and sent to a temple.  Then your total count will be 15,650, Print Count will be 10,000 and running count will be 5,650 (15,650 – 100000).</string>
+    <string name="chant_setgs_3">As a user you have three options or ways in which you can do your nama japana.</string>
+    <string name="chant_setgs_4">Write Option: In this method you just need to drag  the feather into the book to write the nama. </string>
+    <string name="chant_setgs_5">Key Touch: Touch the keys in the sequence order to write the nama – touch the key which is orange color.</string>
+    <string name="chant_setgs_6">Japamala Option: Move the japamala bead upwards or downwards to write the nama.</string>
+    <string name="chant_setgs_7">You have downloaded an App, so in order to synchronize the count with our central database click on the icon to sync the data (by default application will sync the data for every 100 chants done).</string>
+    <string name="chant_1">Select the language in which you wish to chant.</string>
+    <string name="chant_2">You can select your chosen way for chanting the name of your favourite deity.</string>
+    <string name="chant_3">Enter the name of the devotee who is writing the namakoti.  The default setting is the name of the person who registers.  You can choose to have it dedicated to other people, such as your parents or siblings or others.</string>
+    <string name="chant_4">Ensure that you save the settings by Clicking on Save button.</string>
 
-    <string name="save_nama_aditional_key">_savenama</string>
-
-    <!--error messages-->
-    <string name="error_phone_required">Please enter User Name or your Phone Number to Login</string>
-    <string name="error_phone_valid">Please enter valid Username/Phone number</string>
-    <string name="error_valid_phone">Please enter the valid Phone number</string>
-
-    <string name="error_chant_count">Please enter the number of chant</string>
-    <string name="error_valid_chant">Please enter the valid number of chant</string>
-    <string name="error_username">Please enter the Name</string>
-    <string name="error_phone">Please enter the Phone number</string>
-    <string name="error_phone_valid_phn">Please enter valid Phone number</string>
-    <string name="error_address">Please enter the Address</string>
-    <string name="error_email">Please enter the email</string>
-    <string name="error_pincode">Please enter the Pincode</string>
-
-    <string name="pref_namas_running_count_key">pref_namas_running_count_key</string>
-    <string name="pref_namas_local_running_count_key">pref_namas_local_running_count_key</string>
-    <string name="chanting_others">Chanting for others</string>
-    <string name="attending_inperstion">Attending in person</string>
-    <string name="chanting_social_cause">Chanting for social cause</string>
-    <string name="interested">Interested in</string>
-    <string name="advanced_options">Advanced Options</string>
-    <string name="pincode_value">Enter Pincode</string>
-    <string name="pincode">Pincode</string>
-    <string name="enter_address">Enter Address</string>
-    <string name="address">Address</string>
-    <string name="enter_phone">Enter phone number</string>
-    <string name="enter_username">Enter Username</string>
-    <string name="pin_label">Waiting for OTP..........</string>
-    <string name="pin">Pin</string>
-    <string name="verify_num">Verify your  number</string>
-    <string name="we_have_sent_otp">We\'ve sent an OTP to</string>
-    <string name="on_voice">On</string>
-    <string name="off_voice">Off</string>
-    <string name="done">Done</string>
-    <string name="error_otp">Please enter otp</string>
-    <string name="otp">Otp</string>
-    <string name="stop">Stop</string>
-    <string name="print">Print</string>
-    <string name="profile">Profile</string>
-    <string name="save">Save</string>
-    <string name="error">Error</string>
-    <string name="please_upload_image">Please upload profile image</string>
-    <string name="city">City</string>
-    <string name="state">State</string>
-    <string name="country">Country</string>
-    <string name="payment">Payment</string>
-    <string name="new_chant">Create Normal Chanting</string>
-    <string name="chant_for_cause">Chanting For a Cause</string>
-    <string name="new_chant_for_cause">Create Chant for a Cause</string>
-    <string name="error_enter_person_name">Please enter the Name of the Person</string>
-    <string name="no_results">No results found</string>
-    <string name="salutation">Salutation</string>
-    <string name="firstname">First Name</string>
-    <string name="lastname">Last Name</string>
-    <string name="gender">Gender</string>
-    <string name="male">Male</string>
-    <string name="female">Female</string>
-    <string name="date_of_birth">Date of Birth</string>
-    <string name="gothram">Gothram</string>
-    <string name="address1">Address 1</string>
-    <string name="address2">Address 2</string>
-    <string name="postal_code">Postal Code/Zip Code</string>
-    <string name="email">Email</string>
-    <string name="mobile">Mobile</string>
-    <string name="postal">Postal Code</string>
-    <string name="error_firstName">Please enter First Name</string>
-    <string name="error_address1">Please enter Address1</string>
-    <string name="error_address2">Please enter Address2</string>
-    <string name="error_gothram">Please enter Gothram</string>
-    <string name="error_lastname">Please enter Last Name</string>
-    <string name="error_country">Please enter Country</string>
-    <string name="error_state">Please enter State</string>
-    <string name="error_city">Please enter City</string>
-    <string name="error_valid_email">Please enter valid email</string>
-    <string name="phone_code">+91</string>
-    <string name="edit_profile">Edit Profile</string>
-    <string name="being_helped">Being Helped</string>
-    <string name="helping_others">Helping Others</string>
-    <string name="decline">Decline</string>
-    <string name="accept">Accept</string>
-    <string name="i_accept">I accept the request</string>
-    <string name="i_would_do_chant">I would like to do chant only</string>
-    <string name="sorry_i_will_not">Sorry, I will not be able to help</string>
-    <string name="sorry_i_know_of">Sorry, I cannot help but I know of</string>
-    <string name="count">Count</string>
-    <string name="times">Times</string>
-    <string name="no_of_people_text1">No.of people invited</string>
-    <string name="no_of_people_text2">No.of people who didn\'t participate</string>
-    <string name="no_of_people_text3">Total Chants requested</string>
-    <string name="request_for">Request for</string>
-    <string name="social_cause">Social cause</string>
-    <string name="invite_participants">Invite participants</string>
-    <string name="start_date">Start Date</string>
-    <string name="end_date">End Date</string>
-    <string name="when_do_you_want">When do you want to?</string>
-    <string name="nirguna">Nirguna</string>
-    <string name="saguna">Saguna</string>
-    <string name="how_many_people">How many people do you want to help you in prayers?</string>
-    <string name="all_contacts">All phone Contacts</string>
-    <string name="total_no_people">Total number of people selected by you</string>
-    <string name="you_requested_text">You had requested for</string>
-    <string name="invite_friends_text">I would like to invite friends to register and take part in mantra chanting</string>
-    <string name="message_for_text">Message for people who are praying for you</string>
-    <string name="do_you_want_pooja_text">Do you want pooja or an Archana to be done after your prayers are completed</string>
-    <string name="request_for_chant">Request for Chant</string>
-    <string name="name">Name</string>
-    <string name="error_namam">Please enter namam</string>
-    <string name="error_no_of_people">Please enter number of people for helping in prayer</string>
-    <string name="god">God</string>
-    <string name="set_remainder">Set Remainder</string>
-    <string name="participants">Participants</string>
-    <string name="total_chant_requested">Total Chants requested</string>
-    <string name="total_chants_completed">Total Chants completed</string>
-    <string name="no_of_chats_left">Number of Chants Left</string>
-    <string name="days_left">Days Left</string>
-    <string name="cancel_request">Cancel Request</string>
-    <string name="send_remainder">Send Remainder</string>
-    <string name="attending">Attending</string>
-    <string name="no">No</string>
-    <string name="add_participants">Add Participants</string>
-    <string name="how_many_chants_do">How many chant do you want to do</string>
-    <string name="chants_per_person">Chants per Person</string>
-    <string name="error_self_chant_no">Please enter self chant number</string>
-    <string name="error_people_count_no">Please enter people chant number</string>
-    <string name="participant_details">Participant Details</string>
-    <string name="cancel">Cancel</string>
-    <string name="being_helped_details">Being Helped Chanting Details</string>
-    <string name="chanting_type">Chanting Type</string>
-    <string name="location">Location</string>
-    <string name="date_time"><![CDATA[Date & Time]]></string>
-    <string name="start_time">START TIME</string>
-    <string name="end_time">END TIME</string>
-    <string name="continue_text">Continue</string>
-    <string name="chants_required_by_you">Chants required by you</string>
-    <string name="helping_others_details">Helping Others Chanting Details</string>
-    <string name="description">Description</string>
-    <string name="error_message">Please enter message</string>
-    <string name="error_description">Please enter description</string>
-    <string name="error_participant_add">You don\'t have access to add participants for this request</string>
-    <string name="great">Great!</string>
-    <string name="success_msg">You have successfully requested for chanting on</string>
-    <string name="error_count">Please enter chant count</string>
-    <string name="error_count_validaion_msg">Please enter number greater 10% of participant chant number and less than participant chant number</string>
-    <string name="permissions_disabled">You need to provide permission to proceed. Please enable them in Settings to continue.</string>
-    <string name="permissions_required">Permissions Required</string>
-    <string name="home">Home</string>
-    <string name="print_delivery"><![CDATA[Print & Delivery Nama]]></string>
-    <string name="logout">Logout</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="you_can_print_text">You can print and deliver the Nama to the Temple of your Choice</string>
-    <string name="count_status">Count Status</string>
-    <string name="no_of_namas_printed">Number of Nama\'s to be Printed</string>
-    <string name="choose_temple">Choose the Temple</string>
-    <string name="print_type">Print Type</string>
-    <string name="name_to_be_printed">In whose name to be printed</string>
-    <string name="hand_written">Hand written Chant</string>
-    <string name="pay">Pay</string>
-    <string name="logout_msg">Are you sure you want to logout?</string>
-    <string name="ok">Ok</string>
-    <string name="dreams_true">Dreams come true.</string>
-    <string name="eny_today">Enjoy today.</string>
-    <string name="shine_bright">Shine bright like a diamond</string>
-    <string name="total_chan_chanted">Total Chants Chanted</string>
-    <string name="chanting">Chanting</string>
-    <string name="panchang">Daily Panchang</string>
-    <string name="service">Services</string>
-    <string name="draganddrop">Drag and drop</string>
-    <string name="key_touch">Key on Touch</string>
-    <string name="japamala">Japamala</string>
-    <string name="yes">Yes</string>
-    <string name="reprint">Reprint</string>
-    <string name="participant_chant_status">Participants chant status</string>
-    <string name="error_user_phone_required">Enter your Username/Phone number</string>
-    <string name="error_name_min">Please enter the minimum 4- characters of the Name</string>
-    <string name="error_pincode_max">Pincode must be 6-digits</string>
-    <string name="error_person_name_min">This field required minimum 4-characters</string>
-    <string name="error_chant_per_person_valid">Chants per person less than or equal to No.of chants</string>
-    <string name="error_chant_self_person_valid">Self chants is less than or equal to No.of chants</string>
-    <string name="pref_user_id_key">pref_user_id_key</string>
-    <string name="pref_user_upgrade_key">pref_user_upgrade_key</string>
-    <string name="hand_written_image_namakoti">hand_written_image_namakoti</string>
-    <string name="lord_shiva">Lord Shiva</string>
+    <string name="app_version_help_label"><u>App version</u></string>
+    <string name="title_activity_container">Container</string>
+    <string name="action_settings">Settings</string>
+    <string name="durga_mata">Durga mata</string>
+    <string name="you_can_print_and_deliver_the_nama_to_the_temple_of_your_choice">You can print and deliver the Nama to the Temple of your Choice</string>
 
 
 </resources>

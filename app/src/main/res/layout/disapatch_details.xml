@@ -8,8 +8,8 @@
     <LinearLayout
         android:id="@+id/dispatches_layout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_30sdp"
-        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:background="@color/orange_bg"
         android:gravity="center_vertical"
         android:orientation="horizontal" >
 
@@ -19,18 +19,18 @@
             android:layout_weight="0.1"
             android:contentDescription="collapse"
             android:gravity="center"
-            android:padding="@dimen/_3sdp"
+            android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
             android:text="+"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/orange" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.9"
             android:gravity="center_vertical"
-            android:padding="@dimen/_3sdp"
+            android:padding="@dimen/margin_top_bottem_spinners_in_adapter"
             android:text="Dispatches"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/orange" />
     </LinearLayout>
 
     <LinearLayout

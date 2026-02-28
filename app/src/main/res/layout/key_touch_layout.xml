@@ -1,68 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1" >
+    android:weightSum="1">
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_weight="0.2"
-        android:visibility="visible"/>
+        android:layout_weight="0.2" />
 
-    <LinearLayout
+    <com.nex3z.flowlayout.FlowLayout
         android:id="@+id/nama_btns_ll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.6"
         android:gravity="center"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:orientation="vertical" >
+        android:orientation="horizontal"
+        android:scrollbars="none"
+        android:weightSum="1"
+        app:flRowSpacing="4dp"/>
 
-        <!--
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.3"
-            android:background="@color/yellow_movie"
-            android:gravity="center"
-            android:text="jai"
-            android:textColor="@color/black" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.05" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.3"
-            android:background="@color/yellow_movie"
-            android:gravity="center"
-            android:text="sri"
-            android:textColor="@color/black" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.05" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.3"
-            android:background="@color/yellow_movie"
-            android:gravity="center"
-            android:text="ram"
-            android:textColor="@color/black" />
-        -->
-    </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_weight="0.2"
-        android:visibility="visible"/>
+        android:layout_weight="0.2" />
 
 </LinearLayout>

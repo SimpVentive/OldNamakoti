@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.1"
+        layout="@layout/country_hdr_phone" />
+    
+    <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_top_bottem_spinners_in_adapter"
+        android:layout_marginTop="@dimen/margin_top_bottem_spinners_in_adapter"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:text="Select Nama"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/textSize_for_et_enternama"
+        android:textStyle="bold" /> -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/listview_countries"
+        android:layout_width="match_parent"
+        android:fastScrollEnabled="true"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_top_bottem_spinners_in_adapter"
+        android:layout_marginTop="@dimen/margin_top_bottem_spinners_in_adapter"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/textSize_for_et_enternama"
+        android:textStyle="bold" />
+
+</LinearLayout>

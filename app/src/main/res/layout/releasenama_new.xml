@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_of_save_nama">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="top"
+            android:text="@string/you_can_print_and_deliver_the_nama_to_the_temple_of_your_choice"
+            android:textColor="@color/profile_new_color_text"
+            android:textSize="@dimen/textSize_for_et_enternama" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/gods_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_of_spinner_in_profile_ls"
+                android:layout_weight="0.77"
+                android:background="@drawable/select_img"
+                android:gravity="left|center_vertical"
+                android:paddingTop="@dimen/padding_left_right_of_view_profile"
+                android:paddingBottom="@dimen/padding_left_right_of_view_profile"
+                android:paddingStart="@dimen/padding_left_right_of_view_profile"
+                android:paddingEnd="@dimen/height_of_save_nama_god"
+                android:text="@string/app_name"
+                android:textSize="@dimen/textSize_for_et_enternama"
+                tools:ignore="NestedWeights" />
+
+            <ImageView
+                android:id="@+id/god_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.23"
+                android:contentDescription="@string/empty_description" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_of_views_save_nama"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <include layout="@layout/count_status_layout" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:text="@string/no_of_namas_printed"
+                    android:textColor="@color/profile_new_color_text"
+                    android:textSize="@dimen/textSize_for_setnama" />
+
+                <Button
+                    android:id="@+id/no_of_namas_to_print"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_img"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_of_spinner_in_profile"
+                    android:paddingStart="@dimen/padding_left_right_of_view_profile"
+                    android:paddingEnd="@dimen/margin_leftright_signup"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSize_for_et_enternama" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:text="@string/choose_the_temple"
+                    android:textColor="@color/profile_new_color_text"
+                    android:textSize="@dimen/textSize_for_setnama" />
+
+                <Button
+                    android:id="@+id/choose_the_temple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_img"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_of_spinner_in_profile"
+                    android:paddingStart="@dimen/padding_left_right_of_view_profile"
+                    android:paddingEnd="@dimen/margin_leftright_signup"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSize_for_et_enternama" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:text="@string/print_type"
+                    android:textColor="@color/profile_new_color_text"
+                    android:textSize="@dimen/textSize_for_setnama" />
+
+                <Button
+                    android:id="@+id/print_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_img"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_of_spinner_in_profile"
+                    android:paddingStart="@dimen/padding_left_right_of_view_profile"
+                    android:paddingEnd="@dimen/margin_leftright_signup"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSize_for_et_enternama" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:text="@string/in_whose_name"
+                    android:textColor="@color/profile_new_color_text"
+                    android:textSize="@dimen/textSize_for_setnama" />
+
+                <EditText
+                    android:id="@+id/name_of_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:background="@color/white"
+                    android:digits="qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM "
+                    android:hint="@string/nama_of_the_person"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/padding_left_right_of_view_profile"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSize_for_et_enternama" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:text="@string/hand_written_chant"
+                    android:textColor="@color/profile_new_color_text"
+                    android:textSize="@dimen/textSize_for_setnama" />
+
+                <Button
+                    android:id="@+id/handwritten_chant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_img"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_of_spinner_in_profile"
+                    android:paddingStart="@dimen/padding_left_right_of_view_profile"
+                    android:paddingEnd="@dimen/margin_leftright_signup"
+                    android:text="No"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSize_for_et_enternama" />
+
+                <TextView
+                    android:id="@+id/hand_written_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:text="@string/upload_specimen_handwritten"
+                    android:textColor="@color/profile_new_color_text"
+                    android:textSize="@dimen/textSize_for_setnama"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/hand_written_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/hand_written_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_of_hand_written_image"
+                        android:contentDescription="@string/empty_description" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_of_spinner_in_profile"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_of_views_save_nama"
+                    android:background="@drawable/rounded_corners_4_main"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/pay_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_4_enternama"
+                        android:background="@drawable/selector_4_buttons"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/padding_right_left_of_pay"
+                        android:paddingRight="@dimen/padding_right_left_of_pay"
+                        android:text="@string/pay"
+                        android:textColor="@drawable/common_txt_selector"
+                        android:textSize="@dimen/textSize_for_setnama" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

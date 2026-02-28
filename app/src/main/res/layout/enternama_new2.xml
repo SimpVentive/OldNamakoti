@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.57"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <Spinner
+                android:id="@+id/gods_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.55"
+                android:background="@drawable/select_img"
+                android:text="@string/selectlanguage"
+                android:textColor="#000000"
+                android:textSize="@dimen/textSize_for_setnama_et" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.08" />
+
+        <ImageView
+            android:id="@+id/god_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:src="@drawable/rama" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.08" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#C67D00" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/paddingLeft_for_enternama"
+        android:text="@string/countstaus"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/textSize_4_enternama"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_4_enternama"
+                android:layout_weight="0.4"
+                android:background="@color/app_color"
+                android:gravity="center"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/user" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.04" />
+
+            <TextView
+                android:id="@+id/total_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.56"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint="@string/counttotal"
+                android:textSize="@dimen/textSize_for_et_enternama" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.04" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_4_enternama"
+                android:layout_weight="0.4"
+                android:background="@color/app_color"
+                android:gravity="center"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/user" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.04" />
+
+            <TextView
+                android:id="@+id/printed_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.56"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_for_et_enternama" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.04" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_4_enternama"
+                android:layout_weight="0.4"
+                android:background="@color/app_color"
+                android:gravity="center"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/user" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.04" />
+
+            <TextView
+                android:id="@+id/running_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.56"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_for_et_enternama" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/voice_ll"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.05" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/namam"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textSize_4_enternama"
+            android:textStyle="bold|italic" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.05" />
+
+        <ImageView
+            android:id="@+id/voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:contentDescription="@string/on_voice"
+            android:src="@drawable/voice_on" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.12"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/drag_and_drop_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="Drag and Drop"
+                android:textSize="@dimen/textSize_4_radio_enternama" />
+
+            <RadioButton
+                android:id="@+id/key_touch_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Key Touch"
+                android:textSize="@dimen/textSize_4_radio_enternama" />
+
+            <RadioButton
+                android:id="@+id/japa_mala_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Japa Mala"
+                android:textSize="@dimen/textSize_4_radio_enternama" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toplinear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.43"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <include
+            android:id="@+id/drag_and_drop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/drag_and_drop_layout"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/key_touch_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/key_touch_layout"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/japa_mala_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/japa_mala_layout"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/linearlayout6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@drawable/rounded_corners_4_main"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_4_enternama"
+                android:background="@drawable/selector_4_buttons"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@drawable/common_txt_selector"
+                android:textSize="@dimen/textSize_4_enternama" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+    </LinearLayout>
+    -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.02" />
+
+</LinearLayout>

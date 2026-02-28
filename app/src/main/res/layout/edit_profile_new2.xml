@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.02" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.85" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/title"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.545"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <EditText
+                            android:id="@+id/title_id"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:background="@color/app_color"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/paddingLeft_for_enternama"
+                            android:text="@string/profile"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/textSize_for_setnama_et" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.4"
+                                android:src="@drawable/down_select_button_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/gender"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.595"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/male_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:tag="Male"
+                            android:textSize="@dimen/textsize_profile_et" />
+
+                        <RadioButton
+                            android:id="@+id/female_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textSize="@dimen/textsize_profile_et" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/first_name_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.545"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_of_icons"
+                            android:layout_weight="0.19"
+                            android:background="@color/app_color"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:src="@drawable/indicators_yellow" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.03" />
+
+                        <EditText
+                            android:id="@+id/first_name_profile"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.77"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/first_name_profile"
+                            android:inputType="textCapWords"
+                            android:textSize="@dimen/textsize_profile_et" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/last_name_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.545"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_of_icons"
+                            android:layout_weight="0.19"
+                            android:background="@color/app_color"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:src="@drawable/indicators_yellow" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.03" />
+
+                        <EditText
+                            android:id="@+id/last_name_profile"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.77"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/last_name_profile"
+                            android:inputType="textCapWords"
+                            android:textSize="@dimen/textsize_profile_et" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile_date"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/dob_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.545"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.32"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <EditText
+                                android:id="@+id/date_profile"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:hint="@string/date"
+                                android:inputType="date"
+                                android:textSize="@dimen/textsize_profile_et" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/margin_of_icons"
+                                android:layout_weight="0.4"
+                                android:background="@color/app_color"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="1" >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.6"
+                                    android:src="@drawable/down_arrow" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.025" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.32"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <EditText
+                                android:id="@+id/month_profile"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:hint="@string/month"
+                                android:inputType="date"
+                                android:textSize="@dimen/textsize_profile_et" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/margin_of_icons"
+                                android:layout_weight="0.4"
+                                android:background="@color/app_color"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="1" >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.6"
+                                    android:src="@drawable/down_arrow" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.025" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.32"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <EditText
+                                android:id="@+id/year_profile"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:hint="@string/year"
+                                android:inputType="date"
+                                android:textSize="@dimen/textsize_profile_et" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/margin_of_icons"
+                                android:layout_weight="0.4"
+                                android:background="@color/app_color"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="1" >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.6"
+                                    android:src="@drawable/down_arrow" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile_address"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/address1_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.545"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <EditText
+                            android:id="@+id/address1_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapWords"
+                            android:textSize="@dimen/textsize_profile_et" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile_address"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/address2_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.545"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <EditText
+                            android:id="@+id/address2_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapWords"
+                            android:textSize="@dimen/textsize_profile_et" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/po_box_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.545"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_of_icons"
+                            android:layout_weight="0.19"
+                            android:background="@color/app_color"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:src="@drawable/indicators_yellow" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.03" />
+
+                        <EditText
+                            android:id="@+id/po_box_pofile"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.77"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/po_box_profile"
+                            android:inputType="textCapWords"
+                            android:textSize="@dimen/textsize_profile_et" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/state_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.545"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_of_icons"
+                            android:layout_weight="0.19"
+                            android:background="@color/app_color"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:src="@drawable/indicators_yellow" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.03" />
+
+                        <EditText
+                            android:id="@+id/state_profile"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.77"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/state_profile"
+                            android:inputType="textCapWords"
+                            android:textSize="@dimen/textsize_profile_et" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/country_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.545"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_of_icons"
+                            android:layout_weight="0.19"
+                            android:background="@color/app_color"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:src="@drawable/indicators_yellow" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.03" />
+
+                        <EditText
+                            android:id="@+id/country_profile"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.77"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/country_profile"
+                            android:inputType="textCapWords"
+                            android:textSize="@dimen/textsize_profile_et" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/email_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.545"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_of_icons"
+                            android:layout_weight="0.19"
+                            android:background="@color/app_color"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:src="@drawable/indicators_yellow" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.03" />
+
+                        <EditText
+                            android:id="@+id/email_profile"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.77"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/email_profile"
+                            android:inputType="textEmailAddress"
+                            android:textSize="@dimen/textsize_profile_et" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/postal_code_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.545"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_of_icons"
+                            android:layout_weight="0.19"
+                            android:background="@color/app_color"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:src="@drawable/indicators_yellow" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.03" />
+
+                        <EditText
+                            android:id="@+id/postal_profile"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.77"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/postal_code_profile"
+                            android:inputType="number"
+                            android:textSize="@dimen/textsize_profile_et" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4_edit_profile"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/paddingleft_profile_right"
+                        android:text="@string/mobile_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_profile" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.005" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.545"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <EditText
+                            android:id="@+id/mobile_code_profile"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:inputType="phone"
+                            android:textSize="@dimen/textsize_profile_et" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.005" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.795"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/margin_of_icons"
+                                android:layout_weight="0.19"
+                                android:background="@color/app_color"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="1" >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.6"
+                                    android:src="@drawable/indicators_yellow" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.03" />
+
+                            <EditText
+                                android:id="@+id/mobile_profile"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.77"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:textSize="@dimen/textsize_profile_et" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.02" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@drawable/rounded_corners_4_main"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/save_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_4_profile"
+                android:background="@drawable/selector_4_buttons"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_profile" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.03" />
+
+</LinearLayout>

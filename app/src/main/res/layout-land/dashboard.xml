@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+
+        <include
+            android:id="@+id/main_hdrr"
+            layout="@layout/home_hdr_phone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+        <FrameLayout
+            android:id="@+id/realtabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.775" />
+
+        <LinearLayout
+            android:id="@+id/viewpager_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.87"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="1.0">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.985" />
+
+            <com.viewpagerindicator.IconPageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center|bottom"
+                android:layout_weight="0.015" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/anim_ll1"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bar">
+
+        <RelativeLayout
+
+            style="@style/side_menu"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:id="@+id/linear_first"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/btn_close_menu"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:id="@+id/ll_chanting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/menu_view_icon_margin_land"
+                    android:layout_weight="1.00"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_chanting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/write"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:text="Chanting"
+                        android:textColor="#ffffff"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_settings"
+                    android:layout_width="68dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.00"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/menu_view_icon_margin_land"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/settings"
+                        android:scaleType="fitXY" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:text="Settings"
+                        android:textColor="#ffffff"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.00"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/menu_view_icon_margin_land"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/help"
+                        android:scaleType="fitXY" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:text="Help"
+                        android:textColor="#ffffff"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.00"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/menu_view_icon_margin_land"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/share_myapp"
+                        android:scaleType="fitXY" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:text="Share Namakoti"
+                        android:textColor="#ffffff"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.00"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/menu_view_icon_margin_land"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_logout"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/logout_img"
+                        android:scaleType="fitXY" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:text="Logout"
+                        android:textColor="#ffffff"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_close_menu"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bar"
+                android:drawableLeft="@drawable/menu_white"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

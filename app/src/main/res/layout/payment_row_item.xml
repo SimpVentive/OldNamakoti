@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@android:color/white"
+    android:background="@color/white"
     android:orientation="horizontal"
     android:weightSum="1.0" >
 
@@ -11,16 +11,16 @@
         android:id="@+id/payment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:layout_marginLeft="@dimen/_4sdp"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/margin_top_bottem_spinners_in_adapter_2"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="@dimen/margin_top_bottem_spinners_in_adapter_2"
         android:layout_weight="0.95"
         android:ellipsize="end"
         android:gravity="center_vertical"
         android:singleLine="true"
         android:text="Teluguuuuuuuuuuu"
-        android:textColor="@color/text_color_black"
-        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/textSize_for_et_enternama"
         android:visibility="visible" />
 
 </LinearLayout>
